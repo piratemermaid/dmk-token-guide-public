@@ -1,0 +1,60 @@
+@import "./variables.scss";
+
+ul.bullets li {
+    list-style-type: disc;
+    margin-left: 12px;
+}
+
+a.refresh-action {
+    color: $purple-lighten-2;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: lowercase;
+    text-decoration: underline;
+    &:hover {
+        cursor: pointer;
+        color: $purple;
+    }
+}
+.nightMode a.refresh-action {
+    color: $gray-lighten-2;
+    &:hover {
+        color: $purple-lighten-4;
+    }
+}
+
+.tc-planner-row {
+    margin-bottom: 20px;
+}
+
+ul.storyline-list li {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+li.storyline-item {
+    padding: 2px 0;
+}
+
+li.storyline-item.welcome,
+li.storyline-item.build,
+li.storyline-item.stringbold {
+    font-weight: bold;
+}
+
+li.storyline-item.quest.storyline-item-subtask {
+    margin-left: 30px;
+}
+
+.tc-char-img {
+    display: inline-block;
+    margin-bottom: 10px;
+    &.unob {
+        opacity: 0.6;
+    }
+    span {
+        position: relative;
+        top: 20px;
+        right: 36px;
+    }
+}

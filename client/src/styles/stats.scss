@@ -1,0 +1,55 @@
+.stats-number {
+    font-size: 39px;
+    color: #9575cd;
+}
+.nightMode .stats-number {
+    color: #b39ddb;
+}
+
+.stats-category {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #9575cd;
+}
+.nightMode .stats-category {
+    color: #b39ddb;
+}
+
+.stats-text {
+    font-size: 16px;
+}
+
+img.stats-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 25%;
+}
+
+.coll-avgs {
+    tr {
+        border: none;
+    }
+    td,
+    th {
+        padding: 6px;
+    }
+}
+
+.data-check {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a.color-link {
+    text-decoration: underline;
+    color: #9575cd;
+    &:hover {
+        color: #b39ddb;
+    }
+}
+.nightMode a.color-link {
+    color: #b39ddb;
+    &:hover {
+        color: #9575cd;
+    }
+}

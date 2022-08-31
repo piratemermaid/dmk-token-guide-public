@@ -1,0 +1,19 @@
+{
+    "name": "dmk-token-guide-base",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "client": "npm start --prefix client",
+        "server": "nodemon index.js --prefix server",
+        "build-client": "npm run build --prefix client",
+        "update-main": "npm run merge-dev && npm run push-main",
+        "merge-dev": "git checkout main && git merge dev",
+        "push-main": "git push && git checkout dev && git push",
+        "updatedb": "npm run updatedb --prefix server",
+        "devnotes": "npm run devnotes --prefix server",
+        "event": "npm run event --prefix server",
+        "storyline": "npm run storyline --prefix server",
+        "tc": "npm run tc --prefix server",
+        "manual": "npm run manual --prefix server"
+    }
+}

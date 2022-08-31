@@ -1,0 +1,108 @@
+@import "../../styles/variables.scss";
+
+#form {
+    margin-top: 40px;
+    input {
+        color: black;
+        &:focus {
+            border-bottom: 1px solid $purple;
+            box-shadow: 0 1px 0 0 #000;
+        }
+        &:focus + label {
+            color: $purple;
+        }
+    }
+    button:hover {
+        background: $purple-lighten-1 !important;
+    }
+}
+
+.form-info {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 20px 0;
+}
+.form-message {
+    font-weight: bold;
+    margin: 20px 0;
+}
+.success {
+    color: $form-success;
+}
+.warning {
+    color: $form-error;
+}
+
+/* password strength indicator styles */
+#pw-strength-indicator {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    &.score-0 {
+        color: $pw-score-0;
+    }
+    &.score-1 {
+        color: $pw-score-1;
+    }
+    &.score-2 {
+        color: $pw-score-2;
+    }
+    &.score-3 {
+        color: $pw-score-3;
+    }
+    &.score-4 {
+        color: $pw-score-4;
+    }
+}
+
+#pw-suggestions {
+    font-weight: normal;
+    font-size: 12px;
+    color: black;
+    ul li {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+}
+
+/* toggle password visiblity styles */
+.pw-vis-toggle {
+    margin-left: 6px;
+}
+
+#login-helpers {
+    margin-top: 40px;
+}
+
+.data-preview-char {
+    padding: 2px 0;
+}
+
+form span.character-counter {
+    display: none;
+}
+
+.nightMode #form {
+    input {
+        color: $gray-lighten-2;
+        &:focus {
+            border-bottom: 1px solid $purple-lighten-3;
+            box-shadow: 0 1px 0 0 #000;
+        }
+        &:focus + label {
+            color: $purple-lighten-3;
+        }
+    }
+    #pw-suggestions {
+        color: white;
+    }
+    .success {
+        color: $form-success-dark;
+    }
+    .warning {
+        color: $form-error-dark;
+    }
+    button:hover {
+        background: $purple-darken-2 !important;
+    }
+}

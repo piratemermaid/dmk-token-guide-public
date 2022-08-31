@@ -1,0 +1,116 @@
+// Header.scss
+
+@import "../../styles/variables.scss";
+
+#header {
+    #header-mobile {
+        li.link-category {
+            padding-left: 8px;
+            color: $purple-lighten-2;
+            li a {
+                color: black;
+            }
+        }
+    }
+
+    div.nav-content {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .dropdown-content {
+        background: $gray-lighten-2;
+        li a {
+            color: black;
+        }
+        li:hover {
+            background: $purple-lighten-5;
+        }
+    }
+
+    .sidenav-trigger:hover {
+        cursor: pointer;
+        border-bottom: none;
+    }
+
+    .sidenav {
+        li.link-category {
+            height: 38px;
+        }
+        li > a {
+            height: 40px;
+            line-height: 40px;
+            border-bottom: none;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .brand-logo {
+            margin-left: 20px;
+        }
+    }
+
+    // mode toggle styles
+    .mode-toggles {
+        position: relative;
+        bottom: 16px;
+        .workMode-toggle {
+            float: right;
+        }
+        .nightMode-toggle {
+            float: right;
+        }
+    }
+
+    .mode-toggles-s {
+        text-align: center;
+        .workMode-toggle {
+            text-align: right;
+        }
+        .nightMode-toggle {
+            text-align: left;
+        }
+    }
+
+    .switch {
+        label {
+            color: white;
+            font-size: 12px;
+        }
+        /* Override counter */
+        span.character-counter {
+            display: none;
+        }
+        label input[type="checkbox"]:checked + .lever {
+            background-color: #f5f5f5;
+        }
+        label input[type="checkbox"]:checked + .lever:after {
+            background-color: #eeeeee;
+        }
+    }
+}
+
+// night mode styles
+.nightMode #header {
+    #header-mobile {
+        background: $gray-darken-2;
+        li a {
+            color: white;
+        }
+        li.link-category {
+            color: $gray-lighten-2;
+        }
+    }
+    .dropdown-content {
+        background: $gray-lighten-1;
+        li:hover {
+            background: $gray-lighten-2;
+        }
+    }
+    label input[type="checkbox"]:checked + .lever {
+        background-color: $gray-lighten-2;
+    }
+    label input[type="checkbox"]:checked + .lever:after {
+        background-color: $gray-lighten-5;
+    }
+}

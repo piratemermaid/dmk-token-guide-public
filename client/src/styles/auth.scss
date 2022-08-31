@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+input {
+    color: black;
+}
+.nightMode input {
+    color: $gray-lighten-2;
+}
+
+.data-preview-char {
+    padding: 2px 0;
+}
+
+form span.character-counter {
+    display: none;
+}
+
+/* password strength indicator styles */
+span.pw-strength-indicator {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.pw-score-0 {
+    color: $pw-score-0;
+}
+.pw-score-1 {
+    color: pw-score-1;
+}
+.pw-score-2 {
+    color: $pw-score-2;
+}
+.pw-score-3 {
+    color: $pw-score-3;
+}
+.pw-score-4 {
+    color: $pw-score-4;
+}
+
+span.pw-suggestions {
+    font-weight: normal;
+    font-size: 12px;
+    color: black;
+    ul li {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+}
+.nightMode span.pw-suggestions {
+    color: white;
+}
+
+/* toggle password visiblity styles */
+.pw-vis-toggle {
+    margin-left: 6px;
+}

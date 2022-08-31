@@ -1,0 +1,37 @@
+{
+    "name": "server",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nodemon index.js",
+        "start": "node ./bin/www",
+        "updatedb": "node db/scripts/updatedb.js",
+        "devnotes": "node db/scripts/devNotes.js",
+        "storyline": "node db/scripts/storyline.js",
+        "event": "node db/scripts/storyline.js && node db/scripts/event.js",
+        "tc": "node db/scripts/storyline.js && node db/scripts/updateTCInfo.js",
+        "manual": "node db/scripts/manualUpdates.js",
+        "seed": "knex seed:run"
+    },
+    "dependencies": {
+        "@sendgrid/mail": "^7.7.0",
+        "bcrypt": "^5.0.0",
+        "bookshelf": "^1.0.1",
+        "bookshelf-jsonapi-params": "^1.5.3",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "ejs": "~2.6.1",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "knex": "^0.95.15",
+        "moment": "^2.24.0",
+        "morgan": "~1.9.1",
+        "node-sass-middleware": "0.11.0",
+        "pg": "^8.7.1",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "faker": "^4.1.0",
+        "nodemon": "^1.19.1"
+    }
+}

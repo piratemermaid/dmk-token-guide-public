@@ -1,0 +1,59 @@
+.options-text.helper {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.checkbox-container {
+    min-height: 20px;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+    border-right: 2px solid #7e57c2;
+    border-bottom: 2px solid #7e57c2;
+}
+
+.character-counter {
+    display: block;
+}
+
+.action-btn {
+    height: 50px;
+    line-height: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+textarea.data-option {
+    height: 200px;
+}
+.nightMode textarea {
+    color: white;
+}
+
+#options-action-select {
+    span.character-counter {
+        visibility: hidden;
+    }
+    button {
+        height: 62px;
+    }
+}
+
+.option-row {
+    &:hover {
+        cursor: pointer;
+    }
+    .condense {
+        margin: 0;
+    }
+}
+
+.condense {
+    margin-top: 0;
+    margin-bottom: 0;
+    p {
+        margin-top: 0;
+        margin-bottom: 11px;
+    }
+}

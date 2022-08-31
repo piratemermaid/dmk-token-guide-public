@@ -1,0 +1,270 @@
+@import "./variables.scss";
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Hide element but keep space */
+.hidden {
+    visibility: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: $purple-lighten-2;
+}
+.nightMode h4 {
+    color: $purple-lighten-3;
+}
+h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+h6 {
+    font-weight: bold;
+}
+
+.workMode {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.6rem;
+    }
+    h5 {
+        font-size: 1.3rem;
+    }
+}
+
+a {
+    color: $purple-lighten-2;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// remove padding from col to remove annoying
+// spacing issues
+// .col {
+//     padding: 0 !important;
+// }
+
+/*///////////////////////////////////////////////////////
+// HELPER STYLES
+///////////////////////////////////////////////////////*/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hover:hover {
+    cursor: pointer;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+/*///////////////////////////////////////////////////////
+// GLOBAL STYLES
+///////////////////////////////////////////////////////*/
+
+.char-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.card-title {
+    text-align: right;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul.bullets li {
+    list-style-type: disc;
+}
+
+button a {
+    color: white;
+}
+
+img.img-link:hover {
+    cursor: pointer;
+}
+
+span.name-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#out-of-date-warning {
+    background: $purple-darken-3;
+    color: white;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}
+.nightMode #out-of-date-warning {
+    background: $purple-lighten-4;
+    color: black;
+    a {
+        color: black;
+    }
+}
+
+/*///////////////////////////////////////////////////////
+// WORK MODE STYLES
+///////////////////////////////////////////////////////*/
+
+.workMode {
+    .conflict {
+        margin-bottom: 14px;
+    }
+    .card {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border: 1px solid $gray-lighten-2;
+    }
+    .card-title {
+        font-size: 14px;
+        line-height: 16px !important;
+    }
+    .title {
+        font-size: 16px;
+    }
+}
+
+a.collection-link.workMode {
+    font-size: 11px;
+    margin: 5px;
+    float: left;
+    &:hover {
+        color: $gray-darken-1;
+    }
+}
+
+/*///////////////////////////////////////////////////////
+// NIGHT MODE STYLES
+///////////////////////////////////////////////////////*/
+
+#app.nightMode {
+    background: $nightmode-bg;
+    color: $gray-lighten-2;
+}
+
+.nightMode {
+    .card {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border: none;
+        background: $gray-darken-1;
+        color: $gray-lighten-2;
+    }
+
+    .ready-box {
+        border: 1px solid $gray-lighten-2;
+        color: $gray-lighten-2;
+    }
+
+    .collection-link.workMode {
+        color: $gray-lighten-2;
+    }
+
+    .top-link {
+        color: $gray-lighten-2;
+    }
+
+    .task-row-unob {
+        background: $gray-darken-2;
+    }
+
+    textarea {
+        border: 1px solid $gray-lighten-2;
+    }
+
+    [type="checkbox"]:checked + span:not(.lever):before {
+        border-right: 2px solid $gray-lighten-2;
+        border-bottom: 2px solid $gray-lighten-2;
+    }
+
+    .btn {
+        background: $gray-darken-2 !important;
+    }
+
+    tr {
+        border-color: white;
+    }
+
+    .target-level {
+        color: $purple-lighten-4;
+    }
+
+    .nightMode-img-bg {
+        background: $gray-lighten-2;
+        border-radius: 25%;
+    }
+}
+
+/* Keep search dropdown readable */
+.css-10nd86i {
+    color: black;
+}
+
+/*///////////////////////////////////////////////////////
+// MISC STYLES
+///////////////////////////////////////////////////////*/
+
+img.error-page {
+    width: 75px;
+    height: 75px;
+}
+
+#alert {
+    background: $form-error;
+    padding: 6px;
+    color: black;
+    a {
+        margin-top: 10px;
+        color: white;
+        border-bottom: 1px solid white;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+#dev-notes {
+    .container {
+        padding-bottom: 65px;
+    }
+    ul li {
+        list-style-type: disc;
+        margin-left: 14px;
+        margin-bottom: 10px;
+    }
+    h5 {
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    h5 {
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.footer {
+    font-size: 11px;
+    color: black;
+}
+.nightMode .footer {
+    color: white;
+}
+
+.latest-update {
+    font-weight: bold;
+}

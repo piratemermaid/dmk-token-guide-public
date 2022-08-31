@@ -1,0 +1,178 @@
+@import "./variables.scss";
+
+/*///////////////////////////////////////////////////////
+// TOKEN GUIDE (MAIN) PAGE STYLES
+///////////////////////////////////////////////////////*/
+
+#conflict-card {
+    display: none;
+}
+
+.card-title.card-conflict {
+    font-size: 18px;
+}
+
+.conflict-row .col {
+    margin-bottom: 20px;
+}
+
+.task-row td {
+    margin: 12px 0 10px 0;
+}
+
+.task-row-unob {
+    font-style: italic;
+    background: $gray-lighten-2;
+}
+
+.joint-yes {
+    position: absolute;
+}
+
+.joint-img {
+    margin-top: 50px;
+}
+
+.required {
+    font-size: 12px;
+    margin-top: 10px !important;
+}
+
+/* TODO: make mobile-friendly */
+.token-img {
+    width: 52px;
+}
+
+.token-common {
+    border-radius: 25%;
+    background: rgba(226, 226, 226, 0.5);
+    border: 3px solid rgba(226, 226, 226, 0.5);
+}
+
+.token-uncommon {
+    border-radius: 25%;
+    background: rgba(253, 216, 75, 0.5);
+    border: 3px solid rgba(253, 216, 75, 0.5);
+}
+
+.token-rare {
+    border-radius: 25%;
+    background: rgba(98, 227, 255, 0.5);
+    border: 3px solid rgba(98, 227, 255, 0.5);
+}
+
+.token-epic {
+    border-radius: 25%;
+    background: rgba(140, 67, 255, 0.5);
+    border: 3px solid rgba(140, 67, 255, 0.5);
+}
+
+.token-legendary {
+    border-radius: 25%;
+    background: rgba(218, 119, 53, 0.5);
+    border: 3px solid rgba(218, 119, 53, 0.5);
+}
+
+/* Override Select component showing number of characters being typed */
+#select-row span.character-counter {
+    display: none;
+}
+
+#select-row-task-guide span.character-counter {
+    display: none;
+}
+
+p.task-conflicts {
+    margin-top: 10px !important;
+    font-size: 10px;
+    font-style: italic;
+}
+
+img.task-conflict {
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+}
+
+.selected img {
+    width: 50px;
+    height: 50px;
+}
+
+/* select dropdown styles */
+/* .nightMode .css-1pcexqc-container { */
+.nightMode .css-bg1rzq-control {
+    background: $gray-lighten-2;
+}
+.nightMode .css-kj6f9i-menu {
+    color: black;
+    background: $gray-lighten-2;
+}
+
+.gray-out img {
+    opacity: 0.5;
+}
+.workMode span.name-link.gray-out {
+    font-style: italic;
+}
+
+img.task-row-attraction {
+    max-height: 60px;
+    max-width: 50px;
+}
+
+img.task-row-float {
+    max-height: 60px;
+    max-width: 50px;
+}
+
+/*///////////////////////////////////////////////////////
+// TASK GUIDE PAGE STYLES
+///////////////////////////////////////////////////////*/
+
+ul.task-guide-tokens li {
+    list-style-type: disc;
+    margin-left: 16px;
+}
+
+#task-guide {
+    span.sort-selector {
+        color: $purple;
+        &.selected {
+            font-weight: 600;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.nightMode {
+    #task-guide {
+        span.sort-selector {
+            color: $purple-lighten-3;
+        }
+    }
+}
+
+/*///////////////////////////////////////////////////////
+// ATTRACTION GUIDE PAGE STYLES
+///////////////////////////////////////////////////////*/
+
+td.task-drop-info {
+    padding: 10px !important;
+}
+
+.border-right {
+    padding: 0;
+    border-right: 1px solid $gray-lighten-2;
+}
+
+.nightMode .border-right {
+    border-right: 1px solid white;
+}
+
+.mid-row {
+    bottom: 16px;
+    position: relative;
+}

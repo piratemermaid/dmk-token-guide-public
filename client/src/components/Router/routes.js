@@ -1,0 +1,20 @@
+export default {
+    ROOT: "/",
+    TASK_GUIDE: "/task_guide",
+    ATTRACTION_GUIDE: "/attraction_guide",
+    MANAGE_COLLECTION: "/collection",
+    MANAGE_ATTRACTIONS: "/collection/attractions",
+    MANAGE_COSTUMES: "/collection/costumes",
+    MANAGE_FLOATS: "/collection/floats",
+    MANAGE_CONCESSIONS: "/collection/concessions",
+    STATS: "/collection/stats",
+    LEVELING: "/leveling",
+    TOWER_EVENT: "/tower",
+    EVENT: "/event",
+    STRIKING_GOLD: "/striking_gold",
+    ABOUT: "/about",
+    DEV_NOTES: "/dev_notes",
+    ACCOUNT: "/account",
+    GENERATOR: "/generator",
+    GENERATOR_TASK: "/generator/task"
+};

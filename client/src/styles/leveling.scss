@@ -1,0 +1,128 @@
+@import "./variables.scss";
+
+.leveling {
+    li {
+        margin-bottom: 10px;
+    }
+    img {
+        width: 36px;
+        height: 36px;
+        margin-right: 14px;
+        float: left;
+    }
+    td {
+        padding: 6px;
+    }
+    p {
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+}
+
+span.leveling-warning {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+span.leveling-warning-event {
+    color: red;
+}
+.nightMode span.leveling-warning-event {
+    color: rgb(233, 67, 30);
+}
+
+span.leveling-warning-loading {
+    font-style: italic;
+    font-weight: normal;
+}
+
+span.leveling-warning-favorite {
+    color: orange;
+}
+
+.max-width-td {
+    max-width: 500px;
+}
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+    .max-width-td {
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .max-width-td {
+        max-width: 150px;
+    }
+}
+
+img.magic-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+
+.rarity-circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    &.common {
+        background: $rarity-common;
+    }
+    &.uncommon {
+        background: $rarity-uncommon;
+    }
+    &.rare {
+        background: $rarity-rare;
+    }
+    &.epic {
+        background: $rarity-epic;
+    }
+    &.legendary {
+        background: $rarity-legendary;
+    }
+}
+
+tr.leveling.gray-out {
+    display: none;
+}
+
+#leveling-filters {
+    padding: 40px;
+}
+
+#level-filters .col.checkbox-wrapper {
+    padding-left: 0;
+    margin-right: 6px;
+}
+#level-filters .col.checkbox-wrapper span {
+    padding-left: 22px;
+}
+
+.option-row.condense {
+    .col p {
+        padding-left: 0;
+    }
+    div.col {
+        padding: 0;
+    }
+}
+
+img.target-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+img.target-icon-sm {
+    width: 14px;
+    height: 14px;
+    margin-left: 2px;
+    top: 2px;
+    position: relative;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#leveling .stats-category {
+    margin-top: 30px;
+}
