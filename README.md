@@ -10,8 +10,8 @@ I am currently using `node 16.4.0` and `npm 7.18.1`
 
 ## Scripts
 
--   `start-client`: Runs React code from top level directory
--   `start-server`: Runs server-side code from top level directory
+-   `client`: Runs React code from top level directory
+-   `server`: Runs server-side code from top level directory
 -   `build-client`: Builds React code from top level directory
 -   `update-main`: Merge dev to main, pushes both, and checks out dev again
 -   `merge-dev`: Merge dev to main
