@@ -4,6 +4,10 @@
 
 This is a companion app to Disney Magic Kingdoms. It allows players to input their collection information, see token conflicts, and plan level-ups. The original purpose of this app was to display conflicting tokens for a searched character, intended to help prevent creating token conflicts with event characters, and it has grown tremendously from there. See it in action at https://dmktokenguide.com/
 
+## Versions
+
+I am currently using `node 16.4.0` and `npm 7.18.1`
+
 ## Scripts
 
 -   `start-client`: Runs React code from top level directory
