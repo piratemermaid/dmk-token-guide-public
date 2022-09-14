@@ -322,7 +322,12 @@ const CHARACTERS = {
     DUG: "Dug",
     CARL_FREDRICKSEN: "Carl Fredricksen",
     RUSSELL: "Russell",
-    KEVIN: "Kevin"
+    KEVIN: "Kevin",
+    MIRIAM: "Miriam",
+    PRIYA: "Priya",
+    MING_LEE: "Ming Lee",
+    ABBY: "Abby",
+    MEILIN: 'Meilin "Mei" Lee'
 };
 
 const GROUPS = {
@@ -374,7 +379,8 @@ const GROUPS = {
     DALMATIANS: "101 Dalmatians",
     PINOCCHIO: "Pinocchio",
     ROBINHOOD: "Robin Hood",
-    UP: "Up"
+    UP: "Up",
+    TURNING_RED: "Turning Red"
 };
 
 const SPECIAL_ITEMS = {
@@ -609,6 +615,8 @@ const BUILDINGS = {
     DAGOBAH: "Dagobah",
     PARADISE_FALLS: "Paradise Falls",
     CARL_HOUSE: "Carl's House",
+    LEE_FAMILY_TEMPLE: "Lee Family Temple",
+    TYLER_EPIC_PARTY: "Tyler's Epic Party",
 
     THE_HAUNTED_MANSION: "The Haunted Mansion",
     HAUNTED_MANSION: "Haunted Mansion",

@@ -999,6 +999,40 @@ const buildingList = [
         ]
     },
     //up end
+    //turning red
+    {
+        name: BUILDINGS.LEE_FAMILY_TEMPLE,
+        theme: null,
+        group: GROUPS.TURNING_RED,
+        enchantment_group: GROUPS.TURNING_RED,
+        unlock_type: "event",
+        unlock_info: null,
+        time: null,
+        tokens: [
+            { level: 0, name: CHARACTERS.MIRIAM, tokenType: TOKEN },
+            { level: 1, name: CHARACTERS.PRIYA, tokenType: TOKEN },
+            { level: 2, name: CHARACTERS.MING_LEE, tokenType: TOKEN },
+            { level: 3, name: CHARACTERS.ABBY, tokenType: TOKEN },
+            { level: 4, name: CHARACTERS.MEILIN, tokenType: TOKEN }
+        ]
+    },
+    {
+        name: BUILDINGS.TYLER_EPIC_PARTY,
+        theme: null,
+        group: GROUPS.TURNING_RED,
+        enchantment_group: GROUPS.TURNING_RED,
+        unlock_type: "event",
+        unlock_info: null,
+        time: null,
+        tokens: [
+            { level: 0, name: CHARACTERS.MIRIAM, tokenType: EARS },
+            { level: 1, name: CHARACTERS.PRIYA, tokenType: EARS },
+            { level: 2, name: CHARACTERS.MING_LEE, tokenType: EARS },
+            { level: 3, name: CHARACTERS.ABBY, tokenType: EARS },
+            { level: 4, name: CHARACTERS.MEILIN, tokenType: EARS }
+        ]
+    },
+    //turning red end
     //incredibles
     {
         name: BUILDINGS.OMNIDROID_OBSTACLE,

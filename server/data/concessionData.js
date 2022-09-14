@@ -1486,6 +1486,24 @@ const concessions = [
         obtain: "event",
         group: GROUPS.UP,
         rarity: 4
+    },
+    {
+        name: "Doughnut Holes Stand",
+        time: null,
+        magic: null,
+        category: categories.food,
+        obtain: "event",
+        group: GROUPS.TURNING_RED,
+        rarity: null
+    },
+    {
+        name: "Digital Pet Stand",
+        time: null,
+        magic: null,
+        category: categories.souvenir,
+        obtain: "event",
+        group: GROUPS.TURNING_RED,
+        rarity: null
     }
 ];
 //end

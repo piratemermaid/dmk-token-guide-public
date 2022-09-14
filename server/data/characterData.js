@@ -11,7 +11,7 @@ const { C, U, R, E, L } = TOKEN_RARITIES;
 const { magicCosts } = require("./magicCosts");
 
 const groupOrder = [
-    GROUPS.UP,
+    GROUPS.TURNING_RED,
     "Mickey and Friends",
     "DuckTales",
     "Toy Story",
@@ -58,8 +58,9 @@ const groupOrder = [
     "Luca",
     "101 Dalmatians",
     "Pinocchio",
-    GROUPS.ROBINHOOD
-    // GROUPS.UP
+    GROUPS.ROBINHOOD,
+    GROUPS.UP
+    // GROUPS.TURNING_RED
 ];
 
 const characterData = {
@@ -2176,6 +2177,37 @@ const characterData = {
             { name: CHARACTERS.KEVIN, tokenType: EARS },
             { name: GROUPS.UP, tokenType: COMMON }
         ]
+    },
+    [GROUPS.TURNING_RED]: {
+        key: "turningred",
+        characters: {
+            [CHARACTERS.MIRIAM]: {
+                key: "miriam",
+                tokenRarities: [null, null],
+                tokenName: "Skateboard"
+            },
+            [CHARACTERS.PRIYA]: {
+                key: "priya",
+                tokenRarities: [null, null],
+                tokenName: "Vampire-Romance Novel"
+            },
+            [CHARACTERS.MING_LEE]: {
+                key: "minglee",
+                tokenRarities: [null, null],
+                tokenName: "Talisman"
+            },
+            [CHARACTERS.ABBY]: {
+                key: "abby",
+                tokenRarities: [null, null],
+                tokenName: "Headband"
+            },
+            [CHARACTERS.MEILIN]: {
+                key: "meilin",
+                tokenRarities: [null, null],
+                tokenName: "Flute"
+            }
+        },
+        floatTokens: [{ name: GROUPS.TURNING_RED, tokenType: COMMON }]
     }
 };
 //end
