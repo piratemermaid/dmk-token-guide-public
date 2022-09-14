@@ -17,7 +17,13 @@ const ids = {
  * update new characters and update token rarities for existing characters
  */
 
-const characterTokenData = [{ name: CHARACTERS.MIRIAM, token: "N", ears: "N" }];
+const characterTokenData = [
+    { name: CHARACTERS.MIRIAM, token: "N", ears: "N" },
+    { name: CHARACTERS.PRIYA, token: "N", ears: "N" },
+    { name: CHARACTERS.MING_LEE, token: "N", ears: "N" },
+    { name: CHARACTERS.ABBY, token: "N", ears: "N" },
+    { name: CHARACTERS.MEILIN, token: "N", ears: "N" }
+];
 
 if (characterTokenData.length > 0) {
     updateCharacterTokens();
