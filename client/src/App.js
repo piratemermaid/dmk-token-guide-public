@@ -21,7 +21,7 @@ import {
 } from "./redux/actions/appState";
 import { LS } from "./utils/globals";
 
-const CLIENT_VERSION = "2.6.2";
+const CLIENT_VERSION = "2.6.3";
 
 class App extends Component {
     constructor(props) {
