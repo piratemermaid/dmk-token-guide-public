@@ -181,7 +181,7 @@ export const floatWarning = (name, floats) => {
  */
 export function getImgName(str) {
     if (str) {
-        return str.split(" ").join("_");
+        return str.split(" ").join("_").replaceAll('"', "");
     }
 }
 
