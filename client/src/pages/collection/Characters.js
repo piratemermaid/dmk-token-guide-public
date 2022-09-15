@@ -6,6 +6,10 @@ import CollectionPage from "../../components/Page/CollectionPage";
 import { GroupCard, PageAnchors } from "../../components/collection/characters";
 import CharacterPageSortAnchors from "../../components/collection/characters/CharacterPageSortAnchors";
 import { fetchCharacterGroups } from "../../redux/actions/appData";
+import {
+    useCharacterGroupWithCharsList,
+    useCharacterNames
+} from "../../hooks/appData/useAppCharacters";
 
 /**
  * Characters page: users keep track of their characters
@@ -13,7 +17,12 @@ import { fetchCharacterGroups } from "../../redux/actions/appData";
 const Characters = (props) => {
     const { sortCharsByGroup, useReady } = props;
 
-    const { appData, userData } = useSelector((state) => {
+    const { data: appGroups, isLoading: isGroupListLoading } =
+        useCharacterGroupWithCharsList();
+    const { data: appCharacters, isLoading: isCharNamesListLoading } =
+        useCharacterNames();
+
+    const { userData } = useSelector((state) => {
         return state;
     });
 
@@ -35,9 +44,15 @@ const Characters = (props) => {
      * with property of array of objects with user character data
      */
     const getDataList = () => {
+        if (isGroupListLoading) {
+            return [];
+        }
+
         let groupList = [];
         if (sortCharsByGroup) {
-            appData.groups.map(({ name, characters }) => {
+            for (let group of appGroups) {
+                const { name, characters } = group;
+
                 groupList.push({
                     group: name,
                     characters: characters.map((name) => {
@@ -53,9 +68,9 @@ const Characters = (props) => {
                         characters: [getCharData("R2-D2"), getCharData("C-3PO")]
                     });
                 }
-            });
+            }
         } else {
-            const characters = appData.characters.map(({ name }) => {
+            const characters = appCharacters.map((name) => {
                 return getCharData(name);
             });
             const charsByLevel = _.groupBy(characters, "level");
