@@ -2,18 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 
+import { getImgNameNew } from "../../utils/utils";
+
 const CharacterImg = ({ name, imgClass, ...otherProps }) => {
     const { nightMode } = useSelector((state) => state.appState);
 
-    const formattedName = name
-        .replaceAll(" ", "_")
-        .replaceAll('"', "")
-        .replaceAll(".", "")
-        .toLowerCase();
-
     return (
         <img
-            src={`/img/webp/characters/C-${formattedName}.webp`}
+            src={`/img/webp/characters/C-${getImgNameNew(name)}.webp`}
             className={[
                 imgClass || "char-img",
                 nightMode ? "nightMode-img-bg" : null

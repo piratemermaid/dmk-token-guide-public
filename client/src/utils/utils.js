@@ -186,6 +186,21 @@ export function getImgName(str) {
 }
 
 /**
+ * Convert strings to image name from wiki
+ * (new naming convention for new webp images)
+ */
+export function getImgNameNew(str) {
+    if (str) {
+        return str
+            .replaceAll(" ", "_")
+            .replaceAll('"', "")
+            .replaceAll("'", "")
+            .replaceAll(".", "")
+            .toLowerCase();
+    }
+}
+
+/**
  * Get a token's name
  * @param {string} name: character name
  * @param {string} tokenType: token type e.g. "ears"

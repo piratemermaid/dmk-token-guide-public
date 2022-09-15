@@ -4,7 +4,7 @@
 
 ### Changed
 
--   Character images now .webp instead of .png
+-   Replace some .pngs with .webps
 
 ## 2.6.3
 
