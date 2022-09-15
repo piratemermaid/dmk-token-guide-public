@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+-   Character images now .webp instead of .png
+
 ## 2.6.3
 
 ### Added
