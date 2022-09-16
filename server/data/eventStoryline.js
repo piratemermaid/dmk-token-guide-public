@@ -6,39 +6,66 @@ const battle = "battle";
 const stringbold = "stringbold";
 
 const dates = {
-    1: "April 28",
-    2: "April 30",
-    3: "May 4",
-    4: "May 10"
+    1: "September 15",
+    2: "September 18",
+    3: "September 24",
+    4: "October 1"
 };
 
 const eventStoryline = [
     {
         type: welcome,
-        name: CHARACTERS.RUSSELL,
+        name: CHARACTERS.MIRIAM,
         time: "6s",
         EC: 100,
-        common: 4,
-        token: 0,
-        ears: 0,
+        common: 5,
+        token: 1,
+        ears: 1,
         date: dates[1]
     },
     {
         type: build,
-        name: BUILDINGS.CARL_HOUSE,
-        time: "8h",
+        name: BUILDINGS.LEE_FAMILY_TEMPLE,
+        time: "6h",
+        EC: 1200,
+        date: dates[1]
+    },
+    {
+        type: welcome,
+        name: CHARACTERS.PRIYA,
+        time: null,
+        EC: null,
+        common: null,
+        token: null,
+        ears: null,
+        date: dates[2]
+    },
+    {
+        type: build,
+        name: BUILDINGS.TYLER_EPIC_PARTY,
+        time: null,
         EC: null,
         date: dates[2]
     },
     {
         type: welcome,
-        name: CHARACTERS.CARL_FREDRICKSEN,
-        time: "6s",
-        EC: 15000,
-        common: 15,
-        token: 15,
-        ears: 15,
+        name: CHARACTERS.ABBY,
+        time: null,
+        EC: null,
+        common: null,
+        token: null,
+        ears: null,
         date: dates[3]
+    },
+    {
+        type: welcome,
+        name: CHARACTERS.MEILIN,
+        time: null,
+        EC: null,
+        common: null,
+        token: null,
+        ears: null,
+        date: dates[4]
     }
 
     // {

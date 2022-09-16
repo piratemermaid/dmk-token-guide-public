@@ -17,38 +17,39 @@ const NO_EVENT = {
 /////////////////////////////////////////////////////////////
 
 const REGULAR = {
-    NAME: "Up",
+    NAME: GROUPS.TURNING_RED,
     TYPE: "Regular",
     DATES: {
-        1: "August 18",
-        2: "August 20",
-        3: "August 27",
-        4: "September 2"
+        1: "September 15",
+        2: "September 18",
+        3: "September 24",
+        4: "October 1"
     },
     GROUPS: [
-        { name: GROUPS.UP, type: "featured" }
+        { name: GROUPS.TURNING_RED, type: "featured" }
         // { name: GROUPS.SNOW_WHITE, type: "helper" }
     ],
     CHARACTERS: [
         {
-            name: CHARS.CARL_FREDRICKSEN,
-            req_levels: { 1: null, 2: null, 3: 2 }
+            name: CHARS.MIRIAM,
+            req_levels: { 1: 3, 2: null, 3: null, 4: null }
         },
         {
-            name: CHARS.RUSSELL,
-            req_levels: { 1: 2, 2: 5, 3: 5 }
+            name: CHARS.MING_LEE,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
         },
         {
-            name: CHARS.DUG,
-            req_levels: { 1: null, 2: null, 3: null }
+            name: CHARS.PRIYA,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
+        },
+        {
+            name: CHARS.ABBY,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
+        },
+        {
+            name: CHARS.MEILIN,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
         }
-
-        // past full event example:
-        // { name: CHARS.PINOCCHIO, req_level: 5 },
-        // { name: CHARS.LUCKY, req_level: 5 },
-        // { name: CHARS.PATCH, req_level: 4 },
-        // { name: CHARS.PERDITA, req_level: 3 },
-        // { name: CHARS.CRUELLA, req_level: 2 },
     ],
     SPECIAL_TOKENS: []
     // past special tokens example:
