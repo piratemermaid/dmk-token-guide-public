@@ -1,6 +1,6 @@
 import _ from "lodash";
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 import Router from "./components/Router";
@@ -23,60 +23,57 @@ import { LS } from "./utils/globals";
 
 const CLIENT_VERSION = "2.6.3";
 
-class App extends Component {
-    constructor(props) {
-        super(props);
+const App = () => {
+    const [levelFilters, setLevelFilters] = useState([]);
+    const [rarityFilters, setRarityFilters] = useState([]);
+    const [selectedToken, setSelectedToken] = useState({});
 
-        this.state = {
-            levelFilters: [],
-            rarityFilters: [],
-            selectedToken: {}
-        };
+    const {
+        appState: { nightMode },
+        appData
+    } = useSelector((state) => state);
 
-        this.updateLevelFilters = this.updateLevelFilters.bind(this);
-        this.updateRarityFilters = this.updateRarityFilters.bind(this);
-        this.updateSelectedToken = this.updateSelectedToken.bind(this);
-    }
+    const dispatch = useDispatch();
 
     /**
      * Update state for level filters on Leveling page
      * @param {integer} lv: selected level
      */
-    updateLevelFilters(lv) {
+    const updateLevelFilters = (lv) => {
         let levelFilters = [];
-        for (let i in this.state.levelFilters) {
-            levelFilters.push(this.state.levelFilters[i]);
+        for (let i in levelFilters) {
+            levelFilters.push(levelFilters[i]);
         }
 
-        if (this.state.levelFilters.includes(lv)) {
+        if (levelFilters.includes(lv)) {
             const index = levelFilters.indexOf(lv);
             levelFilters.splice(index, 1);
         } else {
             levelFilters.push(lv);
         }
 
-        this.setState({ levelFilters });
-    }
+        setLevelFilters(levelFilters);
+    };
 
     /**
      * Update state for rarity filters on Leveling page
      * @param {string} rarity: selected rarity
      */
-    updateRarityFilters(rarity) {
+    const updateRarityFilters = (rarity) => {
         let rarityFilters = [];
-        for (let i in this.state.rarityFilters) {
-            rarityFilters.push(this.state.rarityFilters[i]);
+        for (let i in rarityFilters) {
+            rarityFilters.push(rarityFilters[i]);
         }
 
-        if (this.state.rarityFilters.includes(rarity)) {
+        if (rarityFilters.includes(rarity)) {
             const index = rarityFilters.indexOf(rarity);
             rarityFilters.splice(index, 1);
         } else {
             rarityFilters.push(rarity);
         }
 
-        this.setState({ rarityFilters });
-    }
+        setRarityFilters(rarityFilters);
+    };
 
     /**
      * Set the selected token from TokenGuide
@@ -84,18 +81,17 @@ class App extends Component {
      * @param {object} selectedToken with name and type
      * e.g. { name: "Mickey Mouse", type: "character" }
      */
-    updateSelectedToken(selectedToken) {
-        this.setState({ selectedToken });
-    }
+    const updateSelectedToken = (selectedToken) => {
+        setSelectedToken(selectedToken);
+    };
 
     /**
      * Order characters/tokens by:
      * event special tokens -> event characters -> characters -> special tokens -> fabric tokens
      */
-    getTokenOrder() {
-        if (this.props.appData.status === "success") {
-            const { characters, specialTokens, fabricTokens, event } =
-                this.props.appData;
+    const getTokenOrder = () => {
+        if (appData.status === "success") {
+            const { characters, specialTokens, fabricTokens, event } = appData;
 
             let tokenOrder = [];
 
@@ -142,68 +138,50 @@ class App extends Component {
 
             return tokenOrder;
         }
-    }
+    };
 
-    componentDidMount() {
+    useEffect(() => {
         // Fetch app data
-        this.props.fetchAppData();
+        dispatch(fetchAppData());
 
         // Check workMode and nightMode in localStorage
         // and toggle in redux if true (default false)
         const workMode = localStorage.getItem(LS.WORK_MODE);
         if (workMode === "true") {
-            this.props.toggleWorkMode();
+            dispatch(toggleWorkMode());
         }
         const nightMode = localStorage.getItem(LS.NIGHT_MODE);
         if (nightMode === "true") {
-            this.props.toggleNightMode();
+            dispatch(toggleNightMode());
         }
 
-        this.props.checkIfAuthenticated();
-        this.props.fetchUserData();
+        dispatch(checkIfAuthenticated());
+        dispatch(fetchUserData());
+    }, []);
+
+    // Set dark background if night mode
+    if (nightMode) {
+        document.getElementsByTagName("body")[0].style.background =
+            "rgb(49, 49, 49)";
     }
 
-    render() {
-        const { levelFilters, rarityFilters, selectedToken } = this.state;
-        const {
-            appState: { nightMode }
-        } = this.props;
+    return (
+        <QueryClientProvider client={new QueryClient()}>
+            <div id="app" className={nightMode ? "nightMode" : ""}>
+                {/* <SiteWarning /> */}
+                <Router
+                    userVersion={CLIENT_VERSION}
+                    levelFilters={levelFilters}
+                    rarityFilters={rarityFilters}
+                    selectedToken={selectedToken}
+                    tokenOrder={getTokenOrder}
+                    updateSelectedToken={updateSelectedToken}
+                    updateLevelFilters={updateLevelFilters}
+                    updateRarityFilters={updateRarityFilters}
+                />
+            </div>
+        </QueryClientProvider>
+    );
+};
 
-        // Set dark background if night mode
-        if (nightMode) {
-            document.getElementsByTagName("body")[0].style.background =
-                "rgb(49, 49, 49)";
-        }
-
-        return (
-            <QueryClientProvider client={new QueryClient()}>
-                <div id="app" className={nightMode ? "nightMode" : ""}>
-                    {/* <SiteWarning /> */}
-                    <Router
-                        userVersion={CLIENT_VERSION}
-                        levelFilters={levelFilters}
-                        rarityFilters={rarityFilters}
-                        selectedToken={selectedToken}
-                        tokenOrder={this.getTokenOrder}
-                        updateSelectedToken={this.updateSelectedToken}
-                        updateLevelFilters={this.updateLevelFilters}
-                        updateRarityFilters={this.updateRarityFilters}
-                    />
-                </div>
-            </QueryClientProvider>
-        );
-    }
-}
-
-function mapStateToProps(state) {
-    const { appData, userData, appState } = state;
-    return { appData, userData, appState };
-}
-
-export default connect(mapStateToProps, {
-    fetchAppData,
-    fetchUserData,
-    checkIfAuthenticated,
-    toggleWorkMode,
-    toggleNightMode
-})(App);
+export default App;

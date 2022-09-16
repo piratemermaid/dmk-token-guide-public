@@ -137,7 +137,7 @@ const buildingList = [
         tokens: [
             { level: 0, name: CHARACTERS.PLUTO, tokenType: TOKEN },
             { level: 1, name: CHARACTERS.PLUTO, tokenType: EARS },
-            { level: 2, name: CHARACTERS.GODMOTHER, tokenType: EARS },
+            { level: 2, name: CHARACTERS.FAIRY_GODMOTHER, tokenType: EARS },
             { level: 3, name: CHARACTERS.CHIP, tokenType: EARS },
             { level: 4, name: CHARACTERS.DALE, tokenType: EARS }
         ]
@@ -376,7 +376,7 @@ const buildingList = [
         time: "12h",
         tokens: [
             { level: 0, name: CHARACTERS.TREMAINE, tokenType: TOKEN },
-            { level: 1, name: CHARACTERS.GODMOTHER, tokenType: TOKEN },
+            { level: 1, name: CHARACTERS.FAIRY_GODMOTHER, tokenType: TOKEN },
             { level: 2, name: CHARACTERS.TREMAINE, tokenType: EARS },
             { level: 3, name: CHARACTERS.CINDERELLA, tokenType: EARS },
             { level: 4, name: CHARACTERS.CINDERELLA, tokenType: TOKEN }
@@ -391,7 +391,7 @@ const buildingList = [
         unlock_type: BUILDING_CATEGORIES.STORYLINE,
         time: "12h",
         tokens: [
-            { level: 0, name: CHARACTERS.GODMOTHER, tokenType: EARS },
+            { level: 0, name: CHARACTERS.FAIRY_GODMOTHER, tokenType: EARS },
             { level: 1, name: CHARACTERS.DRIZELLA, tokenType: TOKEN },
             { level: 2, name: CHARACTERS.ANASTASIA, tokenType: TOKEN },
             { level: 3, name: CHARACTERS.CINDERELLA, tokenType: EARS },
@@ -423,7 +423,7 @@ const buildingList = [
         unlock_type: BUILDING_CATEGORIES.STORYLINE,
         time: "8h",
         tokens: [
-            { level: 0, name: CHARACTERS.DAVY, tokenType: TOKEN },
+            { level: 0, name: CHARACTERS.DAVY_JONES, tokenType: TOKEN },
             { level: 1, name: CHARACTERS.TINK, tokenType: EARS },
             { level: 2, name: CHARACTERS.HOOK, tokenType: EARS },
             { level: 3, name: CHARACTERS.JOHN, tokenType: EARS },
@@ -454,7 +454,7 @@ const buildingList = [
         time: "8h",
         tokens: [
             { level: 0, name: GROUPS.PP, tokenType: COMMON },
-            { level: 1, name: CHARACTERS.DAVY, tokenType: TOKEN },
+            { level: 1, name: CHARACTERS.DAVY_JONES, tokenType: TOKEN },
             { level: 2, name: CHARACTERS.KING_LOUIE, tokenType: EARS },
             { level: 3, name: CHARACTERS.WENDY, tokenType: EARS },
             { level: 4, name: CHARACTERS.MICHAEL, tokenType: TOKEN }
@@ -487,9 +487,9 @@ const buildingList = [
         time: "8h",
         tokens: [
             { level: 0, name: CHARACTERS.JACK_SPARROW, tokenType: TOKEN },
-            { level: 1, name: CHARACTERS.WILL, tokenType: TOKEN },
+            { level: 1, name: CHARACTERS.WILL_TURNER, tokenType: TOKEN },
             { level: 2, name: CHARACTERS.ELIZABETH, tokenType: TOKEN },
-            { level: 3, name: CHARACTERS.WILL, tokenType: EARS },
+            { level: 3, name: CHARACTERS.WILL_TURNER, tokenType: EARS },
             { level: 4, name: CHARACTERS.ELIZABETH, tokenType: EARS }
         ]
     },
@@ -501,8 +501,8 @@ const buildingList = [
         unlock_type: BUILDING_CATEGORIES.STORYLINE,
         time: "12h",
         tokens: [
-            { level: 0, name: CHARACTERS.TIA, tokenType: TOKEN },
-            { level: 1, name: CHARACTERS.TIA, tokenType: EARS },
+            { level: 0, name: CHARACTERS.TIA_DALMA, tokenType: TOKEN },
+            { level: 1, name: CHARACTERS.TIA_DALMA, tokenType: EARS },
             { level: 2, name: CHARACTERS.BARBOSSA, tokenType: TOKEN },
             { level: 3, name: CHARACTERS.BARBOSSA, tokenType: EARS },
             { level: 4, name: CHARACTERS.SCAR, tokenType: TOKEN }
@@ -517,8 +517,8 @@ const buildingList = [
         unlock_info: "150 gems",
         time: "4h",
         tokens: [
-            { level: 0, name: CHARACTERS.WILL, tokenType: TOKEN },
-            { level: 1, name: CHARACTERS.WILL, tokenType: EARS },
+            { level: 0, name: CHARACTERS.WILL_TURNER, tokenType: TOKEN },
+            { level: 1, name: CHARACTERS.WILL_TURNER, tokenType: EARS },
             { level: 2, name: CHARACTERS.ELIZABETH, tokenType: TOKEN },
             { level: 3, name: CHARACTERS.ELIZABETH, tokenType: EARS },
             { level: 4, name: CHARACTERS.BARBOSSA, tokenType: EARS }
@@ -549,10 +549,10 @@ const buildingList = [
         unlock_info: "30k elixir",
         time: "6h",
         tokens: [
-            { level: 0, name: CHARACTERS.DAVY, tokenType: TOKEN },
-            { level: 1, name: CHARACTERS.DAVY, tokenType: EARS },
-            { level: 2, name: CHARACTERS.TIA, tokenType: TOKEN },
-            { level: 3, name: CHARACTERS.TIA, tokenType: EARS },
+            { level: 0, name: CHARACTERS.DAVY_JONES, tokenType: TOKEN },
+            { level: 1, name: CHARACTERS.DAVY_JONES, tokenType: EARS },
+            { level: 2, name: CHARACTERS.TIA_DALMA, tokenType: TOKEN },
+            { level: 3, name: CHARACTERS.TIA_DALMA, tokenType: EARS },
             { level: 4, name: CHARACTERS.WENDY, tokenType: EARS }
         ]
     },
@@ -1646,7 +1646,7 @@ const buildingList = [
         tokens: [
             { level: 0, name: CHARACTERS.SNOW_WHITE, tokenType: EARS },
             { level: 0, name: CHARACTERS.HAPPY, tokenType: EARS },
-            { level: 0, name: CHARACTERS.TUI, tokenType: EARS }
+            { level: 0, name: CHARACTERS.CHIEF_TUI, tokenType: EARS }
         ]
     },
     {
@@ -1718,7 +1718,7 @@ const buildingList = [
         tokens: [
             { level: 0, name: CHARACTERS.ROO, tokenType: TOKEN },
             { level: 0, name: CHARACTERS.RABBIT, tokenType: TOKEN },
-            { level: 0, name: CHARACTERS.CR, tokenType: TOKEN }
+            { level: 0, name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: TOKEN }
         ]
     },
     {
@@ -1731,7 +1731,7 @@ const buildingList = [
         time: "2h",
         tokens: [
             { level: 0, name: GROUPS.WTP, tokenType: COMMON },
-            { level: 0, name: CHARACTERS.CR, tokenType: EARS }
+            { level: 0, name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: EARS }
         ]
     },
     //pooh end
@@ -2000,8 +2000,8 @@ const buildingList = [
         time: "4h",
         tokens: [
             { level: 0, name: CHARACTERS.NAVEEN, tokenType: EARS },
-            { level: 0, name: CHARACTERS.ODIE, tokenType: TOKEN },
-            { level: 0, name: CHARACTERS.ODIE, tokenType: EARS },
+            { level: 0, name: CHARACTERS.MAMA_ODIE, tokenType: TOKEN },
+            { level: 0, name: CHARACTERS.MAMA_ODIE, tokenType: EARS },
             { level: 0, name: CHARACTERS.TIANA, tokenType: TOKEN },
             { level: 0, name: CHARACTERS.FACILIER, tokenType: TOKEN }
         ]
@@ -2017,7 +2017,7 @@ const buildingList = [
         tokens: [
             { level: 0, name: GROUPS.PATF, tokenType: COMMON },
             { level: 0, name: CHARACTERS.EUDORA, tokenType: TOKEN },
-            { level: 0, name: CHARACTERS.ODIE, tokenType: TOKEN },
+            { level: 0, name: CHARACTERS.MAMA_ODIE, tokenType: TOKEN },
             { level: 0, name: CHARACTERS.TIANA, tokenType: EARS },
             { level: 0, name: CHARACTERS.LOTTIE, tokenType: EARS }
         ]
@@ -2063,7 +2063,7 @@ const buildingList = [
         time: "8h",
         tokens: [
             { level: 0, name: CHARACTERS.GRAMMA_TALA, tokenType: TOKEN },
-            { level: 0, name: CHARACTERS.TUI, tokenType: TOKEN }
+            { level: 0, name: CHARACTERS.CHIEF_TUI, tokenType: TOKEN }
         ]
     },
     {
@@ -2092,7 +2092,7 @@ const buildingList = [
         time: "6h",
         tokens: [
             { level: 0, name: GROUPS.MOANA, tokenType: COMMON },
-            { level: 0, name: CHARACTERS.TUI, tokenType: EARS },
+            { level: 0, name: CHARACTERS.CHIEF_TUI, tokenType: EARS },
             { level: 0, name: CHARACTERS.MAUI, tokenType: TOKEN },
             { level: 0, name: CHARACTERS.MOANA, tokenType: EARS },
             { level: 0, name: CHARACTERS.HEI_HEI, tokenType: EARS }
@@ -2107,7 +2107,7 @@ const buildingList = [
         unlock_info: "Moana collection",
         time: "4h",
         tokens: [
-            { level: 0, name: CHARACTERS.TUI, tokenType: TOKEN },
+            { level: 0, name: CHARACTERS.CHIEF_TUI, tokenType: TOKEN },
             { level: 0, name: CHARACTERS.PUA, tokenType: TOKEN },
             { level: 0, name: CHARACTERS.PUA, tokenType: EARS },
             { level: 0, name: CHARACTERS.MAUI, tokenType: EARS },

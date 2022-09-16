@@ -246,7 +246,7 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.DAISY_DINER, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.GODMOTHER, tokenType: EARS },
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: EARS },
             { name: CHARACTERS.CELIA, tokenType: EARS },
             { name: CHARACTERS.SNOW_WHITE, tokenType: EARS },
             { name: CHARACTERS.DAD, tokenType: EARS },
@@ -278,7 +278,7 @@ const taskData = [
             { name: BUILDINGS.GOOFY_PLAYHOUSE, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.WILL, tokenType: TOKEN },
+            { name: CHARACTERS.WILL_TURNER, tokenType: TOKEN },
             { name: CHARACTERS.RAPUNZEL, tokenType: TOKEN },
             { name: CHARACTERS.FROZONE, tokenType: EARS },
             { name: CHARACTERS.MIGUEL, tokenType: EARS },
@@ -342,7 +342,7 @@ const taskData = [
             { name: CHARACTERS.MIKE, tokenType: TOKEN },
             { name: CHARACTERS.SIMBA, tokenType: TOKEN },
             { name: CHARACTERS.MARCH_HARE, tokenType: EARS },
-            { name: CHARACTERS.DAVY, tokenType: EARS },
+            { name: CHARACTERS.DAVY_JONES, tokenType: EARS },
             { name: CHARACTERS.R2D2, tokenType: EARS }
         ]
     },
@@ -910,7 +910,7 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.CINDERELLA, tokenType: EARS },
-            { name: CHARACTERS.DAVY, tokenType: TOKEN }
+            { name: CHARACTERS.DAVY_JONES, tokenType: TOKEN }
         ]
     },
     {
@@ -972,7 +972,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.MIKE, tokenType: TOKEN },
             { name: CHARACTERS.DRIZELLA, tokenType: EARS },
-            { name: CHARACTERS.ODIE, tokenType: TOKEN }
+            { name: CHARACTERS.MAMA_ODIE, tokenType: TOKEN }
         ]
     },
     {
@@ -1065,7 +1065,7 @@ const taskData = [
             { name: CHARACTERS.MINNIE, tokenType: EARS },
             { name: CHARACTERS.PETE, tokenType: TOKEN },
             { name: CHARACTERS.LOUIE, tokenType: EARS },
-            { name: CHARACTERS.TUI, tokenType: EARS }
+            { name: CHARACTERS.CHIEF_TUI, tokenType: EARS }
         ]
     },
     {
@@ -1144,7 +1144,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.BULLSEYE, tokenType: TOKEN },
             { name: CHARACTERS.SINA, tokenType: TOKEN },
-            { name: CHARACTERS.TUI, tokenType: TOKEN }
+            { name: CHARACTERS.CHIEF_TUI, tokenType: TOKEN }
         ]
     },
     {
@@ -2123,7 +2123,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.CELIA, tokenType: EARS },
             { name: CHARACTERS.FLORA, tokenType: EARS },
-            { name: CHARACTERS.WILL, tokenType: TOKEN },
+            { name: CHARACTERS.WILL_TURNER, tokenType: TOKEN },
             { name: CHARACTERS.GREEF_KARGA, tokenType: EARS },
             { name: SPECIAL_ITEMS.BAG, type: "mini_event", tokenType: SPECIAL }
         ]
@@ -2162,8 +2162,8 @@ const taskData = [
             { name: BUILDINGS.BUZZ_ASTRO_BLASTERS, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.GODMOTHER, tokenType: TOKEN },
-            { name: CHARACTERS.GODMOTHER, tokenType: EARS },
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: TOKEN },
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: EARS },
             { name: CHARACTERS.COLT, tokenType: EARS }
         ]
     },
@@ -2464,7 +2464,7 @@ const taskData = [
         time: "4h",
         tokens: [
             { name: CHARACTERS.REX, tokenType: EARS },
-            { name: CHARACTERS.WILL, tokenType: EARS },
+            { name: CHARACTERS.WILL_TURNER, tokenType: EARS },
             { name: CHARACTERS.LUKE_SKYWALKER, tokenType: EARS }
         ]
     },
@@ -2969,7 +2969,7 @@ const taskData = [
         time: "2h",
         level: 3,
         tokens: [
-            { name: CHARACTERS.WILL, tokenType: EARS },
+            { name: CHARACTERS.WILL_TURNER, tokenType: EARS },
             { name: CHARACTERS.COGSWORTH, tokenType: EARS },
             { name: CHARACTERS.PHIL, tokenType: EARS },
             { name: CHARACTERS.PHINEAS, tokenType: EARS }
@@ -3001,7 +3001,7 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.CHARMING, tokenType: EARS },
-            { name: CHARACTERS.GODMOTHER, tokenType: TOKEN },
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: TOKEN },
             { name: CHARACTERS.DRIZELLA, tokenType: TOKEN },
             { name: CHARACTERS.ELIZABETH, tokenType: TOKEN },
             { name: CHARACTERS.SYNDROME, tokenType: TOKEN }
@@ -3070,7 +3070,7 @@ const taskData = [
         name: "Talking of Dreams",
         characters: [
             { name: CHARACTERS.CINDERELLA, level: 6 },
-            { name: CHARACTERS.GODMOTHER, level: 6 }
+            { name: CHARACTERS.FAIRY_GODMOTHER, level: 6 }
         ],
         time: "12h",
         required: [
@@ -3176,7 +3176,7 @@ const taskData = [
     //fairy godmother
     {
         name: "Bibbidi Bobbidi Boo!",
-        characters: [{ name: CHARACTERS.GODMOTHER, level: 1 }],
+        characters: [{ name: CHARACTERS.FAIRY_GODMOTHER, level: 1 }],
         time: "1h",
         tokens: [
             { name: GROUPS.CINDERELLA, tokenType: COMMON },
@@ -3185,7 +3185,7 @@ const taskData = [
     },
     {
         name: "Magical Tour",
-        characters: [{ name: CHARACTERS.GODMOTHER, level: 1 }],
+        characters: [{ name: CHARACTERS.FAIRY_GODMOTHER, level: 1 }],
         time: "2h",
         required: [
             {
@@ -3204,7 +3204,7 @@ const taskData = [
     },
     {
         name: "Helping Others",
-        characters: [{ name: CHARACTERS.GODMOTHER, level: 3 }],
+        characters: [{ name: CHARACTERS.FAIRY_GODMOTHER, level: 3 }],
         time: "4h",
         required: [{ name: BUILDINGS.FANTASY_FAIRE, type: "building" }],
         tokens: [
@@ -3218,7 +3218,7 @@ const taskData = [
     },
     {
         name: "Offering Advice",
-        characters: [{ name: CHARACTERS.GODMOTHER, level: 4 }],
+        characters: [{ name: CHARACTERS.FAIRY_GODMOTHER, level: 4 }],
         time: "6h",
         required: [
             { name: BUILDINGS.PRINCESS_FAIRYTALE, type: REQ_TYPES.BUILDING }
@@ -3234,7 +3234,7 @@ const taskData = [
     {
         name: "Magical Touch-Up",
         characters: [
-            { name: CHARACTERS.GODMOTHER, level: 5 },
+            { name: CHARACTERS.FAIRY_GODMOTHER, level: 5 },
             { name: CHARACTERS.CINDERELLA, level: 4 }
         ],
         time: "2h",
@@ -3342,7 +3342,7 @@ const taskData = [
         time: "1h",
         tokens: [
             { name: GROUPS.CINDERELLA, tokenType: COMMON },
-            { name: CHARACTERS.GODMOTHER, tokenType: TOKEN }
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: TOKEN }
         ]
     },
     {
@@ -3350,7 +3350,7 @@ const taskData = [
         characters: [{ name: CHARACTERS.TREMAINE, level: 1 }],
         time: "2h",
         tokens: [
-            { name: CHARACTERS.GODMOTHER, tokenType: EARS },
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: EARS },
             { name: CHARACTERS.DRIZELLA, tokenType: EARS },
             { name: CHARACTERS.CHARMING, tokenType: TOKEN },
             { name: CHARACTERS.CHARMING, tokenType: EARS }
@@ -3376,7 +3376,7 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.LOST_BOYS, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.TIA, tokenType: TOKEN },
+            { name: CHARACTERS.TIA_DALMA, tokenType: TOKEN },
             { name: CHARACTERS.COLETTE, tokenType: TOKEN },
             { name: CHARACTERS.ROBIN_HOOD, tokenType: EARS }
         ]
@@ -3431,7 +3431,7 @@ const taskData = [
         level: 7,
         required: [{ name: BUILDINGS.PIXIE_HOLLOW, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.GODMOTHER, tokenType: EARS },
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: EARS },
             { name: CHARACTERS.AURORA, tokenType: EARS },
             { name: CHARACTERS.ANNA, tokenType: EARS },
             { name: CHARACTERS.TIGGER, tokenType: TOKEN },
@@ -3529,7 +3529,7 @@ const taskData = [
         required: [
             { name: BUILDINGS.PETER_PAN_FLIGHT, type: REQ_TYPES.BUILDING }
         ],
-        tokens: [{ name: CHARACTERS.TIA, tokenType: TOKEN }]
+        tokens: [{ name: CHARACTERS.TIA_DALMA, tokenType: TOKEN }]
     },
     {
         name: "Stories in the Hideout",
@@ -3714,7 +3714,7 @@ const taskData = [
         name: "Make Plans",
         characters: [
             { name: CHARACTERS.ELIZABETH, level: 2 },
-            { name: CHARACTERS.WILL, level: 3 }
+            { name: CHARACTERS.WILL_TURNER, level: 3 }
         ],
         time: "2h",
         required: [
@@ -3732,13 +3732,13 @@ const taskData = [
             { name: CHARACTERS.JACK_SPARROW, level: 3 }
         ],
         time: "4h",
-        tokens: [{ name: CHARACTERS.TIA, tokenType: EARS }]
+        tokens: [{ name: CHARACTERS.TIA_DALMA, tokenType: EARS }]
     },
     {
         name: "Swordplay",
         characters: [
             { name: CHARACTERS.ELIZABETH, level: 5 },
-            { name: CHARACTERS.WILL, level: 4 }
+            { name: CHARACTERS.WILL_TURNER, level: 4 }
         ],
         time: "4h",
         tokens: [
@@ -3757,7 +3757,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.ANASTASIA, tokenType: TOKEN },
             { name: CHARACTERS.HOOK, tokenType: TOKEN },
-            { name: CHARACTERS.DAVY, tokenType: TOKEN },
+            { name: CHARACTERS.DAVY_JONES, tokenType: TOKEN },
             ,
             { name: "Blue", type: "fabric", tokenType: FABRIC }
         ]
@@ -3765,7 +3765,7 @@ const taskData = [
     //will turner
     {
         name: "Stay in Shape",
-        characters: [{ name: CHARACTERS.WILL, level: 1 }],
+        characters: [{ name: CHARACTERS.WILL_TURNER, level: 1 }],
         time: "1h",
         tokens: [
             { name: GROUPS.PIRATES, tokenType: COMMON },
@@ -3774,7 +3774,7 @@ const taskData = [
     },
     {
         name: "Practice Social Skills",
-        characters: [{ name: CHARACTERS.WILL, level: 3 }],
+        characters: [{ name: CHARACTERS.WILL_TURNER, level: 3 }],
         time: "4h",
         required: [
             { name: BUILDINGS.TORTUGA_TAVERN, type: REQ_TYPES.BUILDING }
@@ -3790,7 +3790,7 @@ const taskData = [
     {
         name: "Bargaining",
         characters: [
-            { name: CHARACTERS.WILL, level: 7 },
+            { name: CHARACTERS.WILL_TURNER, level: 7 },
             { name: CHARACTERS.BARBOSSA, level: 6 }
         ],
         time: "6h",
@@ -3798,18 +3798,18 @@ const taskData = [
             { name: BUILDINGS.TORTUGA_TAVERN, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.TIA, tokenType: EARS },
+            { name: CHARACTERS.TIA_DALMA, tokenType: EARS },
             { name: CHARACTERS.PETER, tokenType: EARS }
         ]
     },
     {
         name: "Testing the Blade",
-        characters: [{ name: CHARACTERS.WILL, level: 6 }],
+        characters: [{ name: CHARACTERS.WILL_TURNER, level: 6 }],
         time: "6h",
         tokens: [
             { name: CHARACTERS.REX, tokenType: TOKEN },
             { name: CHARACTERS.DUCKY, tokenType: EARS },
-            { name: CHARACTERS.DAVY, tokenType: EARS }
+            { name: CHARACTERS.DAVY_JONES, tokenType: EARS }
         ]
     },
     //jack sparrow
@@ -3819,7 +3819,7 @@ const taskData = [
         time: "1h",
         tokens: [
             { name: GROUPS.PIRATES, tokenType: COMMON },
-            { name: CHARACTERS.WILL, tokenType: EARS }
+            { name: CHARACTERS.WILL_TURNER, tokenType: EARS }
         ]
     },
     {
@@ -3853,7 +3853,7 @@ const taskData = [
         characters: [{ name: CHARACTERS.JACK_SPARROW, level: 6 }],
         time: "6h",
         tokens: [
-            { name: CHARACTERS.DAVY, tokenType: EARS },
+            { name: CHARACTERS.DAVY_JONES, tokenType: EARS },
             { name: CHARACTERS.ROLLY, tokenType: TOKEN }
         ]
     },
@@ -3868,22 +3868,22 @@ const taskData = [
         name: "Making Plans",
         characters: [
             { name: CHARACTERS.BARBOSSA, level: 8 },
-            { name: CHARACTERS.TIA, level: 7 }
+            { name: CHARACTERS.TIA_DALMA, level: 7 }
         ],
         time: "4h",
         required: [
             { name: BUILDINGS.PIRATES_OF_CARIBBEAN, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.DAVY, tokenType: TOKEN },
-            { name: CHARACTERS.DAVY, tokenType: EARS }
+            { name: CHARACTERS.DAVY_JONES, tokenType: TOKEN },
+            { name: CHARACTERS.DAVY_JONES, tokenType: EARS }
         ]
     },
     {
         name: "Discussing Goals",
         characters: [
             { name: CHARACTERS.BARBOSSA, level: 7 },
-            { name: CHARACTERS.TIA, level: 6 }
+            { name: CHARACTERS.TIA_DALMA, level: 6 }
         ],
         time: "8h",
         required: [
@@ -3905,24 +3905,24 @@ const taskData = [
     //davy jones
     {
         name: "Calling the Kraken",
-        characters: [{ name: CHARACTERS.DAVY, level: 3 }],
+        characters: [{ name: CHARACTERS.DAVY_JONES, level: 3 }],
         time: "1h",
         required: [{ name: BUILDINGS.KRAKEN, type: REQ_TYPES.BUILDING }],
         tokens: [{ name: GROUPS.PIRATES, tokenType: COMMON }]
     },
     {
         name: "Laughing Over Plans",
-        characters: [{ name: CHARACTERS.DAVY, level: 1 }],
+        characters: [{ name: CHARACTERS.DAVY_JONES, level: 1 }],
         time: "2h",
         tokens: [
             { name: CHARACTERS.JACK_SPARROW, tokenType: TOKEN },
-            { name: CHARACTERS.TIA, tokenType: TOKEN },
+            { name: CHARACTERS.TIA_DALMA, tokenType: TOKEN },
             { name: CHARACTERS.PRINCE_JOHN, tokenType: EARS }
         ]
     },
     {
         name: "Striking Fear in Pirates",
-        characters: [{ name: CHARACTERS.DAVY, level: 2 }],
+        characters: [{ name: CHARACTERS.DAVY_JONES, level: 2 }],
         time: "4h",
         required: [
             { name: BUILDINGS.TORTUGA_TAVERN, type: REQ_TYPES.BUILDING }
@@ -3936,7 +3936,7 @@ const taskData = [
     },
     {
         name: "Playing into the Night",
-        characters: [{ name: CHARACTERS.DAVY, level: 4 }],
+        characters: [{ name: CHARACTERS.DAVY_JONES, level: 4 }],
         time: "6h",
         required: [{ name: BUILDINGS.DAVY_ORGAN, type: REQ_TYPES.BUILDING }],
         tokens: [
@@ -3947,13 +3947,13 @@ const taskData = [
     //tia dalma
     {
         name: "Whirlpool Vortex",
-        characters: [{ name: CHARACTERS.TIA, level: 1 }],
+        characters: [{ name: CHARACTERS.TIA_DALMA, level: 1 }],
         time: "1h",
         tokens: [{ name: GROUPS.PIRATES, tokenType: COMMON }]
     },
     {
         name: "Reading the Shells",
-        characters: [{ name: CHARACTERS.TIA, level: 3 }],
+        characters: [{ name: CHARACTERS.TIA_DALMA, level: 3 }],
         time: "4h",
         required: [
             { name: BUILDINGS.PIRATES_OF_CARIBBEAN, type: REQ_TYPES.BUILDING }
@@ -3963,8 +3963,8 @@ const taskData = [
     {
         name: "Discussing Fates",
         characters: [
-            { name: CHARACTERS.TIA, level: 5 },
-            { name: CHARACTERS.WILL, level: 9 }
+            { name: CHARACTERS.TIA_DALMA, level: 5 },
+            { name: CHARACTERS.WILL_TURNER, level: 9 }
         ],
         time: "12h",
         required: [
@@ -3977,7 +3977,7 @@ const taskData = [
     },
     {
         name: "Reliving Memories",
-        characters: [{ name: CHARACTERS.TIA, level: 4 }],
+        characters: [{ name: CHARACTERS.TIA_DALMA, level: 4 }],
         time: "6h",
         required: [{ name: BUILDINGS.DAVY_ORGAN, type: REQ_TYPES.BUILDING }],
         tokens: [
@@ -4040,7 +4040,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.SCROOGE, tokenType: EARS },
             { name: CHARACTERS.DRIZELLA, tokenType: EARS },
-            { name: CHARACTERS.GODMOTHER, tokenType: EARS },
+            { name: CHARACTERS.FAIRY_GODMOTHER, tokenType: EARS },
             { name: CHARACTERS.CATERPILLAR, tokenType: EARS }
         ]
     },
@@ -5262,7 +5262,7 @@ const taskData = [
         ],
         time: "6h",
         required: [{ name: BUILDINGS.MEADOW, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.TIA, tokenType: EARS }]
+        tokens: [{ name: CHARACTERS.TIA_DALMA, tokenType: EARS }]
     },
     {
         name: "Foraging Together",
@@ -5458,7 +5458,7 @@ const taskData = [
         required: [{ name: BUILDINGS.KAA_JUNGLE, type: REQ_TYPES.BUILDING }],
         tokens: [
             { name: CHARACTERS.WENDY, tokenType: TOKEN },
-            { name: CHARACTERS.TIA, tokenType: EARS },
+            { name: CHARACTERS.TIA_DALMA, tokenType: EARS },
             { name: CHARACTERS.TONY, tokenType: TOKEN }
         ]
     },
@@ -8215,7 +8215,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.LI_SHANG, tokenType: EARS },
             { name: CHARACTERS.GENIE, tokenType: EARS },
-            { name: CHARACTERS.TIA, tokenType: TOKEN }
+            { name: CHARACTERS.TIA_DALMA, tokenType: TOKEN }
         ]
     },
     {
@@ -11020,8 +11020,8 @@ const taskData = [
         time: "8h",
         required: [{ name: BUILDINGS.EEYORE_HOUSE, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.CR, tokenType: TOKEN },
-            { name: CHARACTERS.CR, tokenType: EARS }
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: TOKEN },
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: EARS }
         ]
     },
     {
@@ -11099,7 +11099,7 @@ const taskData = [
             { name: BUILDINGS.POOH_HUNNY_HUNT, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.CR, tokenType: TOKEN },
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: TOKEN },
             { name: CHARACTERS.OWL, tokenType: EARS }
         ]
     },
@@ -11122,7 +11122,7 @@ const taskData = [
         required: [{ name: BUILDINGS.RABBIT_HOUSE, type: REQ_TYPES.BUILDING }],
         tokens: [
             { name: CHARACTERS.PIGLET, tokenType: TOKEN },
-            { name: CHARACTERS.CR, tokenType: EARS }
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: EARS }
         ]
     },
     {
@@ -11183,7 +11183,7 @@ const taskData = [
         ],
         time: "4h",
         required: [{ name: BUILDINGS.RABBIT_HOUSE, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.CR, tokenType: TOKEN }]
+        tokens: [{ name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: TOKEN }]
     },
     {
         name: "Checking On Rabbit",
@@ -11246,7 +11246,7 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.POOH, tokenType: EARS },
-            { name: CHARACTERS.CR, tokenType: TOKEN }
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: TOKEN }
         ]
     },
     {
@@ -11272,7 +11272,7 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.KANGA, tokenType: TOKEN },
-            { name: CHARACTERS.CR, tokenType: EARS }
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: EARS }
         ]
     },
     {
@@ -11336,18 +11336,18 @@ const taskData = [
         ],
         time: "8h",
         required: [{ name: BUILDINGS.RABBIT_HOUSE, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.CR, tokenType: EARS }]
+        tokens: [{ name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: EARS }]
     },
     //cr //christopher robin
     {
         name: "The Expedition",
-        characters: [{ name: CHARACTERS.CR, level: 1 }],
+        characters: [{ name: CHARACTERS.CHRISTOPHER_ROBIN, level: 1 }],
         time: "1h",
         tokens: [{ name: GROUPS.WTP, tokenType: COMMON }]
     },
     {
         name: "Helping at Rabbit's",
-        characters: [{ name: CHARACTERS.CR, level: 2 }],
+        characters: [{ name: CHARACTERS.CHRISTOPHER_ROBIN, level: 2 }],
         time: "2h",
         required: [{ name: "Rabbit's House", type: "building" }],
         tokens: [
@@ -11357,7 +11357,7 @@ const taskData = [
     },
     {
         name: "Looking for Pooh Bear",
-        characters: [{ name: CHARACTERS.CR, level: 3 }],
+        characters: [{ name: CHARACTERS.CHRISTOPHER_ROBIN, level: 3 }],
         time: "4h",
         required: [
             {
@@ -11373,7 +11373,7 @@ const taskData = [
     },
     {
         name: "Repairing a Home",
-        characters: [{ name: CHARACTERS.CR, level: 4 }],
+        characters: [{ name: CHARACTERS.CHRISTOPHER_ROBIN, level: 4 }],
         time: "6h",
         required: [{ name: "Eeyore's House", type: "building" }],
         tokens: [
@@ -11384,13 +11384,13 @@ const taskData = [
     },
     {
         name: "Collecting Snacks",
-        characters: [{ name: CHARACTERS.CR, level: 5 }],
+        characters: [{ name: CHARACTERS.CHRISTOPHER_ROBIN, level: 5 }],
         time: "8h",
         required: [
             { name: BUILDINGS.POOH_HUNNY_HUNT, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.TIA, tokenType: EARS },
+            { name: CHARACTERS.TIA_DALMA, tokenType: EARS },
             { name: CHARACTERS.OWL, tokenType: TOKEN },
             { name: CHARACTERS.OWL, tokenType: EARS }
         ]
@@ -11398,7 +11398,7 @@ const taskData = [
     {
         name: "Helping with a Tail",
         characters: [
-            { name: CHARACTERS.CR, level: 8 },
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, level: 8 },
             { name: CHARACTERS.EEYORE, level: 9 }
         ],
         time: "6h",
@@ -11447,7 +11447,7 @@ const taskData = [
         required: [{ name: BUILDINGS.MANY_ADVENTURES, type: "building" }],
         tokens: [
             { name: CHARACTERS.PIGLET, tokenType: EARS },
-            { name: CHARACTERS.CR, tokenType: TOKEN }
+            { name: CHARACTERS.CHRISTOPHER_ROBIN, tokenType: TOKEN }
         ]
     },
     {
@@ -12680,7 +12680,7 @@ const taskData = [
         characters: [{ name: CHARACTERS.NAVEEN, level: 3 }],
         time: "2h",
         required: [{ name: BUILDINGS.TIANA_PALACE, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.ODIE, tokenType: EARS }]
+        tokens: [{ name: CHARACTERS.MAMA_ODIE, tokenType: EARS }]
     },
     {
         name: "Listening to Jazz Music",
@@ -12688,7 +12688,7 @@ const taskData = [
         time: "6h",
         required: [{ name: BUILDINGS.VOODOO, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.ODIE, tokenType: EARS },
+            { name: CHARACTERS.MAMA_ODIE, tokenType: EARS },
             { name: CHARACTERS.TIANA, tokenType: TOKEN },
             { name: CHARACTERS.LOTTIE, tokenType: TOKEN }
         ]
@@ -12732,7 +12732,7 @@ const taskData = [
         required: [{ name: BUILDINGS.VOODOO, type: REQ_TYPES.BUILDING }],
         tokens: [
             { name: CHARACTERS.LOUIS, tokenType: EARS },
-            { name: CHARACTERS.ODIE, tokenType: TOKEN }
+            { name: CHARACTERS.MAMA_ODIE, tokenType: TOKEN }
         ]
     },
     {
@@ -12759,7 +12759,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.LOUIS, tokenType: TOKEN },
             { name: CHARACTERS.NAVEEN, tokenType: EARS },
-            { name: CHARACTERS.ODIE, tokenType: EARS },
+            { name: CHARACTERS.MAMA_ODIE, tokenType: EARS },
             { name: CHARACTERS.FACILIER, tokenType: TOKEN }
         ]
     },
@@ -12793,7 +12793,7 @@ const taskData = [
         characters: [{ name: CHARACTERS.EUDORA, level: 6 }],
         time: "6h",
         required: [{ name: BUILDINGS.VOODOO, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.ODIE, tokenType: TOKEN }]
+        tokens: [{ name: CHARACTERS.MAMA_ODIE, tokenType: TOKEN }]
     },
     //charlotte //lottie
     {
@@ -12810,7 +12810,7 @@ const taskData = [
         name: "Try on Dresses",
         characters: [{ name: CHARACTERS.LOTTIE, level: 1 }],
         time: "8h",
-        tokens: [{ name: CHARACTERS.ODIE, tokenType: TOKEN }]
+        tokens: [{ name: CHARACTERS.MAMA_ODIE, tokenType: TOKEN }]
     },
     {
         name: "Exciting News",
@@ -12866,7 +12866,7 @@ const taskData = [
         name: "Face Off",
         characters: [
             { name: CHARACTERS.FACILIER, level: 5 },
-            { name: CHARACTERS.ODIE, level: 5 }
+            { name: CHARACTERS.MAMA_ODIE, level: 5 }
         ],
         time: "8h",
         required: [{ name: BUILDINGS.BAYOU, type: REQ_TYPES.BUILDING }],
@@ -12878,7 +12878,7 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.VOODOO, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.ODIE, tokenType: EARS },
+            { name: CHARACTERS.MAMA_ODIE, tokenType: EARS },
             { name: CHARACTERS.NAVEEN, tokenType: EARS }
         ]
     },
@@ -12906,7 +12906,7 @@ const taskData = [
         characters: [{ name: CHARACTERS.LOUIS, level: 5 }],
         time: "8h",
         required: [{ name: BUILDINGS.ODIE_TREE, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.ODIE, tokenType: EARS }]
+        tokens: [{ name: CHARACTERS.MAMA_ODIE, tokenType: EARS }]
     },
     {
         name: "Pretend to Be in Costume",
@@ -12921,7 +12921,7 @@ const taskData = [
     //odie //mama odie
     {
         name: "Fighting Shadows",
-        characters: [{ name: CHARACTERS.ODIE, level: 2 }],
+        characters: [{ name: CHARACTERS.MAMA_ODIE, level: 2 }],
         time: "4h",
         required: [{ name: BUILDINGS.VOODOO, type: REQ_TYPES.BUILDING }],
         tokens: [
@@ -12931,7 +12931,7 @@ const taskData = [
     },
     {
         name: "Walk Through the Bayou",
-        characters: [{ name: CHARACTERS.ODIE, level: 6 }],
+        characters: [{ name: CHARACTERS.MAMA_ODIE, level: 6 }],
         time: "8h",
         required: [{ name: BUILDINGS.BAYOU, type: REQ_TYPES.BUILDING }],
         tokens: [
@@ -12941,7 +12941,7 @@ const taskData = [
     },
     {
         name: "Enjoying Great Food",
-        characters: [{ name: CHARACTERS.ODIE, level: 7 }],
+        characters: [{ name: CHARACTERS.MAMA_ODIE, level: 7 }],
         time: "2h",
         required: [{ name: BUILDINGS.TIANA_PALACE, type: REQ_TYPES.BUILDING }],
         tokens: [{ name: CHARACTERS.NAVEEN, tokenType: TOKEN }]
@@ -12949,7 +12949,7 @@ const taskData = [
     {
         name: "Discuss Wishes",
         characters: [
-            { name: CHARACTERS.ODIE, level: 4 },
+            { name: CHARACTERS.MAMA_ODIE, level: 4 },
             { name: CHARACTERS.LOUIS, level: 3 }
         ],
         time: "4h",
@@ -12958,7 +12958,7 @@ const taskData = [
     },
     {
         name: "Dancing Magic",
-        characters: [{ name: CHARACTERS.ODIE, level: 1 }],
+        characters: [{ name: CHARACTERS.MAMA_ODIE, level: 1 }],
         time: "1h",
         tokens: [
             { name: GROUPS.PATF, tokenType: COMMON },
@@ -12972,7 +12972,7 @@ const taskData = [
         time: "4h",
         tokens: [
             { name: CHARACTERS.GRAMMA_TALA, tokenType: EARS },
-            { name: CHARACTERS.TUI, tokenType: EARS },
+            { name: CHARACTERS.CHIEF_TUI, tokenType: EARS },
             { name: CHARACTERS.MOANA, tokenType: COMMON }
         ]
     },
@@ -13060,7 +13060,7 @@ const taskData = [
         name: "Tales of Past Chiefs",
         characters: [
             { name: CHARACTERS.MOANA, level: 9 },
-            { name: CHARACTERS.TUI, level: 9 }
+            { name: CHARACTERS.CHIEF_TUI, level: 9 }
         ],
         time: "24h",
         required: [{ name: BUILDINGS.HOMECOMING, type: REQ_TYPES.BUILDING }],
@@ -13089,7 +13089,7 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.MOANA_BOAT, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.TUI, tokenType: TOKEN },
+            { name: CHARACTERS.CHIEF_TUI, tokenType: TOKEN },
             { name: CHARACTERS.PUA, tokenType: EARS }
         ]
     },
@@ -13116,7 +13116,7 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.HOMECOMING, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.TUI, tokenType: EARS },
+            { name: CHARACTERS.CHIEF_TUI, tokenType: EARS },
             { name: CHARACTERS.MAUI, tokenType: TOKEN },
             { name: CHARACTERS.MAUI, tokenType: EARS }
         ]
@@ -13147,17 +13147,17 @@ const taskData = [
     //tui
     {
         name: "Surveying the Land",
-        characters: [{ name: CHARACTERS.TUI, level: 1 }],
+        characters: [{ name: CHARACTERS.CHIEF_TUI, level: 1 }],
         time: "1h",
         tokens: [
             { name: CHARACTERS.GRAMMA_TALA, tokenType: TOKEN },
             { name: CHARACTERS.MOANA, tokenType: COMMON },
-            { name: CHARACTERS.TUI, tokenType: TOKEN }
+            { name: CHARACTERS.CHIEF_TUI, tokenType: TOKEN }
         ]
     },
     {
         name: "Oversee the Island",
-        characters: [{ name: CHARACTERS.TUI, level: 2 }],
+        characters: [{ name: CHARACTERS.CHIEF_TUI, level: 2 }],
         time: "4h",
         required: [{ name: BUILDINGS.HOMECOMING, type: REQ_TYPES.BUILDING }],
         tokens: [
@@ -13167,7 +13167,7 @@ const taskData = [
     },
     {
         name: "Check Fish Traps",
-        characters: [{ name: CHARACTERS.TUI, level: 3 }],
+        characters: [{ name: CHARACTERS.CHIEF_TUI, level: 3 }],
         time: "4h",
         required: [{ name: BUILDINGS.MOANA_BOAT, type: REQ_TYPES.BUILDING }],
         tokens: [
@@ -13177,7 +13177,7 @@ const taskData = [
     },
     {
         name: "Stay Prepared for Trouble",
-        characters: [{ name: CHARACTERS.TUI, level: 4 }],
+        characters: [{ name: CHARACTERS.CHIEF_TUI, level: 4 }],
         time: "6h",
         required: [{ name: BUILDINGS.KAKAMORA_BOAT, type: REQ_TYPES.BUILDING }],
         tokens: [{ name: CHARACTERS.HEI_HEI, tokenType: TOKEN }]
@@ -13190,7 +13190,7 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.SINA, tokenType: TOKEN },
             { name: CHARACTERS.SINA, tokenType: EARS },
-            { name: CHARACTERS.TUI, tokenType: EARS }
+            { name: CHARACTERS.CHIEF_TUI, tokenType: EARS }
         ]
     },
     {
@@ -13234,7 +13234,7 @@ const taskData = [
             { name: "Moana", level: 1 }
         ],
         time: "2h",
-        tokens: [{ name: CHARACTERS.TUI, tokenType: TOKEN }]
+        tokens: [{ name: CHARACTERS.CHIEF_TUI, tokenType: TOKEN }]
     },
     //pua
     {
@@ -13261,7 +13261,7 @@ const taskData = [
         time: "2h",
         required: [{ name: BUILDINGS.MOANA_BOAT, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.TUI, tokenType: EARS },
+            { name: CHARACTERS.CHIEF_TUI, tokenType: EARS },
             { name: CHARACTERS.MOANA, tokenType: EARS },
             { name: CHARACTERS.HEI_HEI, tokenType: TOKEN }
         ]

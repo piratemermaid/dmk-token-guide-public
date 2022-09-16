@@ -17,38 +17,39 @@ const NO_EVENT = {
 /////////////////////////////////////////////////////////////
 
 const REGULAR = {
-    NAME: "Up",
+    NAME: GROUPS.TURNING_RED,
     TYPE: "Regular",
     DATES: {
-        1: "August 18",
-        2: "August 20",
-        3: "August 27",
-        4: "September 2"
+        1: "September 15",
+        2: "September 18",
+        3: "September 24",
+        4: "October 1"
     },
     GROUPS: [
-        { name: GROUPS.UP, type: "featured" }
+        { name: GROUPS.TURNING_RED, type: "featured" }
         // { name: GROUPS.SNOW_WHITE, type: "helper" }
     ],
     CHARACTERS: [
         {
-            name: CHARS.CARL_FREDRICKSEN,
-            req_levels: { 1: null, 2: null, 3: 2 }
+            name: CHARS.MIRIAM,
+            req_levels: { 1: 3, 2: null, 3: null, 4: null }
         },
         {
-            name: CHARS.RUSSELL,
-            req_levels: { 1: 2, 2: 5, 3: 5 }
+            name: CHARS.MING_LEE,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
         },
         {
-            name: CHARS.DUG,
-            req_levels: { 1: null, 2: null, 3: null }
+            name: CHARS.PRIYA,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
+        },
+        {
+            name: CHARS.ABBY,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
+        },
+        {
+            name: CHARS.MEILIN,
+            req_levels: { 1: null, 2: null, 3: null, 4: null }
         }
-
-        // past full event example:
-        // { name: CHARS.PINOCCHIO, req_level: 5 },
-        // { name: CHARS.LUCKY, req_level: 5 },
-        // { name: CHARS.PATCH, req_level: 4 },
-        // { name: CHARS.PERDITA, req_level: 3 },
-        // { name: CHARS.CRUELLA, req_level: 2 },
     ],
     SPECIAL_TOKENS: []
     // past special tokens example:
@@ -130,7 +131,7 @@ const TC = {
         { name: CHARS.BAYMAX, chapter: 2, row: 1 },
         { name: CHARS.HONEY_LEMON, chapter: 2, row: 1 },
         { name: CHARS.TINK, chapter: 2, row: 1 },
-        { name: CHARS.TIA, chapter: 2, row: 2 },
+        { name: CHARS.TIA_DALMA, chapter: 2, row: 2 },
         { name: CHARS.HIRO, chapter: 2, row: 2 },
         { name: CHARS.YOKAI, chapter: 2, row: 2 },
         { name: CHARS.GOOFY, chapter: 2, row: 3 },
@@ -146,13 +147,13 @@ const TC = {
         { name: CHARS.ALICE, chapter: 3, row: 1 },
         { name: CHARS.CATERPILLAR, chapter: 3, row: 1 },
         { name: CHARS.RAPUNZEL, chapter: 3, row: 1 },
-        { name: CHARS.WILL, chapter: 3, row: 2 },
+        { name: CHARS.WILL_TURNER, chapter: 3, row: 2 },
         { name: CHARS.MAD_HATTER, chapter: 3, row: 2 },
         { name: CHARS.QUEEN_OF_HEARTS, chapter: 3, row: 2 },
         { name: CHARS.SULLEY, chapter: 3, row: 2 },
         { name: CHARS.MARCH_HARE, chapter: 3, row: 3 },
         { name: CHARS.FORKY, chapter: 3, row: 3 },
-        { name: CHARS.GODMOTHER, chapter: 3, row: 3 },
+        { name: CHARS.FAIRY_GODMOTHER, chapter: 3, row: 3 },
         { name: CHARS.CHESHIRE, chapter: 3, row: 4 },
         { name: CHARS.REMY, chapter: 3, row: 4 },
         { name: CHARS.ORVILLE, chapter: 3, row: 4 }

@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 
-import { getImgName } from "../../utils/utils";
+import { getImgNameNew } from "../../utils/utils";
 
 const CharacterImg = ({ name, imgClass, ...otherProps }) => {
     const { nightMode } = useSelector((state) => state.appState);
 
     return (
         <img
-            src={`/img/characters/${getImgName(name)}.png`}
+            src={`/img/webp/characters/C-${getImgNameNew(name)}.webp`}
             className={[
                 imgClass || "char-img",
                 nightMode ? "nightMode-img-bg" : null

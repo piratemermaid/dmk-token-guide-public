@@ -344,8 +344,16 @@ const characterData = {
             }
         },
         floatTokens: [
-            { name: CHARACTERS.WILL, type: "character", tokenType: TOKEN },
-            { name: CHARACTERS.WILL, type: "character", tokenType: EARS },
+            {
+                name: CHARACTERS.WILL_TURNER,
+                type: "character",
+                tokenType: TOKEN
+            },
+            {
+                name: CHARACTERS.WILL_TURNER,
+                type: "character",
+                tokenType: EARS
+            },
             { name: CHARACTERS.ELIZABETH, type: "character", tokenType: TOKEN },
             {
                 name: CHARACTERS.JACK_SPARROW,
@@ -1539,7 +1547,7 @@ const characterData = {
                 type: "character",
                 tokenType: TOKEN
             },
-            { name: CHARACTERS.TUI, type: "character", tokenType: EARS },
+            { name: CHARACTERS.CHIEF_TUI, type: "character", tokenType: EARS },
             { name: CHARACTERS.MAUI, type: "character", tokenType: EARS },
             { name: GROUPS.MOANA, type: "common", tokenType: COMMON }
         ]

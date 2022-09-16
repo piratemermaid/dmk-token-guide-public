@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+-   Replace some .pngs with .webps
+
 ## 2.6.3
 
 ### Added
