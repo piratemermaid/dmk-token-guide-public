@@ -2215,7 +2215,12 @@ const characterData = {
                 tokenName: "Flute"
             }
         },
-        floatTokens: [{ name: GROUPS.TURNING_RED, tokenType: COMMON }]
+        floatTokens: [
+            { name: GROUPS.TURNING_RED, tokenType: COMMON },
+            { name: CHARACTERS.MIRIAM, tokenType: TOKEN },
+            { name: CHARACTERS.MIRIAM, tokenType: EARS },
+            { name: CHARACTERS.MING_LEE, tokenType: EARS }
+        ]
     }
 };
 //end

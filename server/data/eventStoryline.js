@@ -33,18 +33,18 @@ const eventStoryline = [
     {
         type: welcome,
         name: CHARACTERS.PRIYA,
-        time: null,
-        EC: null,
-        common: null,
-        token: null,
-        ears: null,
+        time: "6s",
+        EC: 2000,
+        common: 10,
+        token: 20,
+        ears: 20,
         date: dates[2]
     },
     {
         type: build,
         name: BUILDINGS.TYLER_EPIC_PARTY,
-        time: null,
-        EC: null,
+        time: "8h",
+        EC: 6500,
         date: dates[2]
     },
     {

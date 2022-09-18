@@ -1007,13 +1007,19 @@ const buildingList = [
         enchantment_group: GROUPS.TURNING_RED,
         unlock_type: "event",
         unlock_info: null,
-        time: null,
+        time: "8h",
         tokens: [
             { level: 0, name: CHARACTERS.MIRIAM, tokenType: TOKEN },
             { level: 1, name: CHARACTERS.PRIYA, tokenType: TOKEN },
             { level: 2, name: CHARACTERS.MING_LEE, tokenType: TOKEN },
             { level: 3, name: CHARACTERS.ABBY, tokenType: TOKEN },
-            { level: 4, name: CHARACTERS.MEILIN, tokenType: TOKEN }
+            {
+                level: 4,
+                name: CHARACTERS.MEILIN,
+                tokenType: TOKEN,
+                remove: true
+            },
+            { level: 4, name: CHARACTERS.MING_LEE, tokenType: TOKEN }
         ]
     },
     {
@@ -1023,13 +1029,19 @@ const buildingList = [
         enchantment_group: GROUPS.TURNING_RED,
         unlock_type: "event",
         unlock_info: null,
-        time: null,
+        time: "4h",
         tokens: [
             { level: 0, name: CHARACTERS.MIRIAM, tokenType: EARS },
             { level: 1, name: CHARACTERS.PRIYA, tokenType: EARS },
             { level: 2, name: CHARACTERS.MING_LEE, tokenType: EARS },
             { level: 3, name: CHARACTERS.ABBY, tokenType: EARS },
-            { level: 4, name: CHARACTERS.MEILIN, tokenType: EARS }
+            {
+                level: 4,
+                name: CHARACTERS.MEILIN,
+                tokenType: EARS,
+                remove: true
+            },
+            { level: 4, name: CHARACTERS.MING_LEE, tokenType: EARS }
         ]
     },
     //turning red end
