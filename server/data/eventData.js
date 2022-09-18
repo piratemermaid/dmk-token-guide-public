@@ -36,7 +36,7 @@ const REGULAR = {
         },
         {
             name: CHARS.MING_LEE,
-            req_levels: { 1: null, 2: null, 3: null, 4: null }
+            premium: true
         },
         {
             name: CHARS.PRIYA,

@@ -296,7 +296,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.FLYNN, tokenType: TOKEN },
             { name: CHARACTERS.DAD, tokenType: TOKEN },
-            { name: CHARACTERS.DUG, tokenType: EARS }
+            { name: CHARACTERS.DUG, tokenType: EARS },
+            { name: "Ming Lee", tokenType: "ears" }
         ]
     },
     {
@@ -797,7 +798,8 @@ const taskData = [
             { name: CHARACTERS.BO_PEEP, tokenType: TOKEN },
             { name: CHARACTERS.MAD_HATTER, tokenType: EARS },
             { name: CHARACTERS.DOC, tokenType: EARS },
-            { name: CHARACTERS.SNEEZY, tokenType: TOKEN }
+            { name: CHARACTERS.SNEEZY, tokenType: TOKEN },
+            { name: "Ming Lee", tokenType: "ears" }
         ]
     },
     {
@@ -858,7 +860,8 @@ const taskData = [
             { name: CHARACTERS.DOPEY, tokenType: EARS },
             { name: CHARACTERS.CALHOUN, tokenType: TOKEN },
             { name: CHARACTERS.CHEWBACCA, tokenType: EARS },
-            { name: CHARACTERS.ALBERTO, tokenType: TOKEN }
+            { name: CHARACTERS.ALBERTO, tokenType: TOKEN },
+            { name: CHARACTERS.MIRIAM, tokenType: EARS }
         ]
     },
     {
@@ -1740,7 +1743,10 @@ const taskData = [
         ],
         time: "4h",
         required: [{ name: BUILDINGS.PIZZA_PLANET, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.WALLE, tokenType: TOKEN }]
+        tokens: [
+            { name: CHARACTERS.WALLE, tokenType: TOKEN },
+            { name: "Ming Lee", tokenType: "token" }
+        ]
     },
     {
         name: "Hang Out with Hamm",
@@ -1754,7 +1760,8 @@ const taskData = [
             { name: CHARACTERS.TINK, tokenType: EARS },
             { name: CHARACTERS.TIMON, tokenType: TOKEN },
             { name: CHARACTERS.GENERAL_HUX, tokenType: TOKEN },
-            { name: CHARACTERS.FINN, tokenType: TOKEN }
+            { name: CHARACTERS.FINN, tokenType: TOKEN },
+            { name: CHARACTERS.MIRIAM, tokenType: TOKEN }
         ]
     },
     {
@@ -1946,7 +1953,8 @@ const taskData = [
             { name: CHARACTERS.DAISY, tokenType: TOKEN },
             { name: CHARACTERS.BUNNY, tokenType: TOKEN },
             { name: CHARACTERS.MAXIMUS, tokenType: TOKEN },
-            { name: CHARACTERS.EUDORA, tokenType: EARS }
+            { name: CHARACTERS.EUDORA, tokenType: EARS },
+            { name: CHARACTERS.MIRIAM, tokenType: TOKEN }
         ]
     },
     {
@@ -2108,6 +2116,7 @@ const taskData = [
             { name: CHARACTERS.MIKE, tokenType: EARS },
             { name: CHARACTERS.SULLEY, tokenType: EARS },
             { name: CHARACTERS.GUS, tokenType: TOKEN },
+            { name: CHARACTERS.MIRIAM, tokenType: TOKEN },
             {
                 name: SPECIAL_ITEMS.REFRESH_TOKEN,
                 tokenType: SPECIAL,
@@ -2498,7 +2507,8 @@ const taskData = [
             { name: CHARACTERS.BUZZ, tokenType: EARS },
             { name: CHARACTERS.DRIZELLA, tokenType: EARS },
             { name: CHARACTERS.RAPUNZEL, tokenType: EARS },
-            { name: CHARACTERS.PENNY, tokenType: EARS }
+            { name: CHARACTERS.PENNY, tokenType: EARS },
+            { name: CHARACTERS.MIRIAM, tokenType: EARS }
         ]
     },
     {
@@ -2988,7 +2998,8 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.MINNIE, tokenType: EARS },
-            { name: CHARACTERS.BUZZ, tokenType: TOKEN }
+            { name: CHARACTERS.BUZZ, tokenType: TOKEN },
+            { name: "Ming Lee", tokenType: "token" }
         ]
     },
     {
@@ -3018,7 +3029,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.NICK, tokenType: EARS },
             { name: CHARACTERS.MAMA_COCO, tokenType: EARS },
-            { name: CHARACTERS.PAIN, tokenType: TOKEN }
+            { name: CHARACTERS.PAIN, tokenType: TOKEN },
+            { name: CHARACTERS.MIRIAM, tokenType: TOKEN }
         ]
     },
     {
@@ -4689,7 +4701,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.BULLSEYE, tokenType: EARS },
             { name: CHARACTERS.MACHIAVELLI, tokenType: EARS },
-            { name: CHARACTERS.FIGARO, tokenType: TOKEN }
+            { name: CHARACTERS.FIGARO, tokenType: TOKEN },
+            { name: "Ming Lee", tokenType: "token" }
         ]
     },
     {
@@ -4994,7 +5007,10 @@ const taskData = [
         ],
         time: "6h",
         required: [{ name: BUILDINGS.FAIRY_HUT, type: REQ_TYPES.BUILDING }],
-        tokens: [{ name: CHARACTERS.JUDY, tokenType: EARS }]
+        tokens: [
+            { name: CHARACTERS.JUDY, tokenType: EARS },
+            { name: "Ming Lee", tokenType: "ears" }
+        ]
     },
     //fauna
     {
@@ -18403,8 +18419,39 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.CARL_HOUSE }],
         tokens: [{ name: GROUPS.UP, tokenType: COMMON }]
-    }
+    },
     //kevin end
+    //miriam
+    {
+        name: "Read Pamphlets",
+        characters: [{ name: "Miriam", level: 2 }],
+        time: "2h",
+        required: [{ name: "Lee Family Temple", level: 0, type: "building" }],
+        tokens: [{ name: "Ming Lee", tokenType: "token" }]
+    },
+    //miriam end
+    //priya
+    //priya end
+    //ming lee
+    {
+        name: "Thank the Ancestors",
+        characters: [{ name: CHARACTERS.MING_LEE, level: 2 }],
+        time: "2h",
+        required: [{ name: BUILDINGS.LEE_FAMILY_TEMPLE }],
+        tokens: [{ name: CHARACTERS.MIRIAM, tokenType: EARS }]
+    },
+    //ming lee end
+    //abby
+    //abby end
+    //meilin
+    {
+        name: "Scrub the Statues",
+        characters: [{ name: CHARACTERS.MEILIN, level: 2 }],
+        time: "2h",
+        required: [{ name: "Lee Family Temple", level: 0, type: "building" }],
+        tokens: [{ name: "Ming Lee", tokenType: "ears" }]
+    }
+    //meilin end
 ];
 //endtasks
 
