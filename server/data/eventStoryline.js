@@ -50,11 +50,11 @@ const eventStoryline = [
     {
         type: welcome,
         name: CHARACTERS.ABBY,
-        time: null,
-        EC: null,
-        common: null,
-        token: null,
-        ears: null,
+        time: "6s",
+        EC: 15000,
+        common: 15,
+        token: 10,
+        ears: 10,
         date: dates[3]
     },
     {

@@ -2196,7 +2196,7 @@ const characterData = {
             },
             [CHARACTERS.PRIYA]: {
                 key: "priya",
-                tokenRarities: [null, null],
+                tokenRarities: [C, U],
                 tokenName: "Vampire-Romance Novel"
             },
             [CHARACTERS.MING_LEE]: {
@@ -2206,7 +2206,7 @@ const characterData = {
             },
             [CHARACTERS.ABBY]: {
                 key: "abby",
-                tokenRarities: [null, null],
+                tokenRarities: [R, E],
                 tokenName: "Headband"
             },
             [CHARACTERS.MEILIN]: {
@@ -2219,7 +2219,8 @@ const characterData = {
             { name: GROUPS.TURNING_RED, tokenType: COMMON },
             { name: CHARACTERS.MIRIAM, tokenType: TOKEN },
             { name: CHARACTERS.MIRIAM, tokenType: EARS },
-            { name: CHARACTERS.MING_LEE, tokenType: EARS }
+            { name: CHARACTERS.MING_LEE, tokenType: EARS },
+            { name: CHARACTERS.PRIYA, tokenType: EARS }
         ]
     }
 };

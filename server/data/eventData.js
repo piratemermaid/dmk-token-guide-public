@@ -32,7 +32,7 @@ const REGULAR = {
     CHARACTERS: [
         {
             name: CHARS.MIRIAM,
-            req_levels: { 1: 3, 2: null, 3: null, 4: null }
+            req_levels: { 1: 3, 2: 4, 3: null, 4: null }
         },
         {
             name: CHARS.MING_LEE,
@@ -40,7 +40,7 @@ const REGULAR = {
         },
         {
             name: CHARS.PRIYA,
-            req_levels: { 1: null, 2: null, 3: null, 4: null }
+            req_levels: { 1: null, 2: 3, 3: null, 4: null }
         },
         {
             name: CHARS.ABBY,

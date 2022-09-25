@@ -19,9 +19,9 @@ const ids = {
 
 const characterTokenData = [
     { name: CHARACTERS.MIRIAM, token: "C", ears: "C" },
-    { name: CHARACTERS.PRIYA, token: "N", ears: "N" },
+    { name: CHARACTERS.PRIYA, token: "C", ears: "U" },
     { name: CHARACTERS.MING_LEE, token: "U", ears: "R" },
-    { name: CHARACTERS.ABBY, token: "N", ears: "N" },
+    { name: CHARACTERS.ABBY, token: "R", ears: "E" },
     { name: CHARACTERS.MEILIN, token: "N", ears: "N" }
 ];
 
