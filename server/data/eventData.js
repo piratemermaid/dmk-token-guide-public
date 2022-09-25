@@ -35,10 +35,6 @@ const REGULAR = {
             req_levels: { 1: 3, 2: 4, 3: null, 4: null }
         },
         {
-            name: CHARS.MING_LEE,
-            premium: true
-        },
-        {
             name: CHARS.PRIYA,
             req_levels: { 1: null, 2: 3, 3: null, 4: null }
         },
@@ -49,6 +45,10 @@ const REGULAR = {
         {
             name: CHARS.MEILIN,
             req_levels: { 1: null, 2: null, 3: null, 4: null }
+        },
+        {
+            name: CHARS.MING_LEE,
+            premium: true
         }
     ],
     SPECIAL_TOKENS: []
