@@ -20,7 +20,9 @@ const EOLPage = () => {
             </p>
 
             <p>
-                I'm really hoping somebody will want to pick up the mantle - if
+                I'm planning to keep things updated as best I can through the
+                end of the month (October), and then I will stop the server. I'm
+                really hoping somebody will want to pick up the mantle - if
                 you're a developer interested in contributing,{" "}
                 <a
                     href="https://github.com/piratemermaid/dmk-token-guide-public"
