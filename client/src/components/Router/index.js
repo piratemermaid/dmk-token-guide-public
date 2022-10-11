@@ -35,7 +35,7 @@ import Generator from "../pages/generator/Generator";
 import TaskGenerator from "../pages/generator/Task";
 import CheckOutOfDate from "../CheckOutOfDate";
 import EOLWarning from "../EOLWarning";
-import EOLPage from "../pages/EOLPage";
+import EOLPage from "../../pages/EOLPage";
 
 const Router = ({
     userVersion,
@@ -90,7 +90,7 @@ const Router = ({
                 <EOLWarning />
                 <CheckOutOfDate userVersion={userVersion} />
                 <Switch>
-                    <Route path="/eol" render={() => <EOLPage />} />
+                    <Route path={ROUTES.EOL} render={() => <EOLPage />} />
                     <Route path="/login" render={() => <Login />} />
                     <Route path="/signup" render={() => <Signup />} />
                     <Route
