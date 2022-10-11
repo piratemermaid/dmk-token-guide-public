@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 2.6.4
+
+-   Added EOL warning
+
 ### Changed
 
 -   Replace some .pngs with .webps
