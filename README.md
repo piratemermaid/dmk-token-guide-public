@@ -51,3 +51,19 @@ I am currently using `node 16.4.0` and `npm 7.18.1`
     -   Increment app version in `App.js` and `devNotes.js` (and `CHANGELOG.md`)
     -   Merge dev to main and run a build (I don't bother keeping dev up to date with builds so I don't merge back to dev)
     -   Commit new build and push, then pull on server and run `devNotes` script
+
+## How to Take Up the Mantle
+
+If you're interested in running the site, I am happy to transfer ownership of the domain. Unfortunately I'm using my server for multiple other projects as well, so you would have to set up your own. I am currently running it on a Digital Ocean droplet that costs me $7-8 per month. Digital Ocean has good guides for setting things up. Feel free to build your own version, this repo has a lot of old spaghetti and if I had all the time in the world I would completely rebuild it.
+
+## Work in Progress
+
+There's a lot of refactoring in the works that I just do not have time to complete.
+
+-   Updating old class components to use hooks
+-   Replacing redux with react-query
+-   Replacing materialize-css with material ui
+
+## Planned Work & User Requests
+
+I will work on adding these as Git issues.
