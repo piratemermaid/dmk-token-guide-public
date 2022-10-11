@@ -22,7 +22,7 @@ const characterTokenData = [
     { name: CHARACTERS.PRIYA, token: "C", ears: "U" },
     { name: CHARACTERS.MING_LEE, token: "U", ears: "R" },
     { name: CHARACTERS.ABBY, token: "R", ears: "E" },
-    { name: CHARACTERS.MEILIN, token: "N", ears: "N" }
+    { name: CHARACTERS.MEILIN, token: "E", ears: "L" }
 ];
 
 if (characterTokenData.length > 0) {

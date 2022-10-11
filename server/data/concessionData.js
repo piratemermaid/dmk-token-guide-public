@@ -1489,21 +1489,21 @@ const concessions = [
     },
     {
         name: "Doughnut Holes Stand",
-        time: null,
-        magic: null,
+        time: "12h",
+        magic: 60,
         category: categories.food,
         obtain: "event",
         group: GROUPS.TURNING_RED,
-        rarity: null
+        rarity: 1
     },
     {
         name: "Digital Pet Stand",
-        time: null,
-        magic: null,
+        time: "8h",
+        magic: 77,
         category: categories.souvenir,
         obtain: "event",
         group: GROUPS.TURNING_RED,
-        rarity: null
+        rarity: 4
     }
 ];
 //end

@@ -1009,17 +1009,17 @@ const buildingList = [
         unlock_info: null,
         time: "8h",
         tokens: [
+            {
+                level: 4,
+                name: CHARACTERS.MING_LEE,
+                tokenType: TOKEN,
+                remove: true
+            },
             { level: 0, name: CHARACTERS.MIRIAM, tokenType: TOKEN },
             { level: 1, name: CHARACTERS.PRIYA, tokenType: TOKEN },
             { level: 2, name: CHARACTERS.MING_LEE, tokenType: TOKEN },
             { level: 3, name: CHARACTERS.ABBY, tokenType: TOKEN },
-            {
-                level: 4,
-                name: CHARACTERS.MEILIN,
-                tokenType: TOKEN,
-                remove: true
-            },
-            { level: 4, name: CHARACTERS.MING_LEE, tokenType: TOKEN }
+            { level: 4, name: CHARACTERS.MEILIN, tokenType: TOKEN }
         ]
     },
     {
@@ -1041,7 +1041,13 @@ const buildingList = [
                 tokenType: EARS,
                 remove: true
             },
-            { level: 4, name: CHARACTERS.MING_LEE, tokenType: EARS }
+            {
+                level: 4,
+                name: CHARACTERS.MING_LEE,
+                tokenType: EARS,
+                remove: true
+            },
+            { level: 4, name: CHARACTERS.MEILIN, tokenType: EARS }
         ]
     },
     //turning red end
