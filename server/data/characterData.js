@@ -11,7 +11,6 @@ const { C, U, R, E, L } = TOKEN_RARITIES;
 const { magicCosts } = require("./magicCosts");
 
 const groupOrder = [
-    GROUPS.TURNING_RED,
     "Mickey and Friends",
     "DuckTales",
     "Toy Story",
@@ -59,8 +58,8 @@ const groupOrder = [
     "101 Dalmatians",
     "Pinocchio",
     GROUPS.ROBINHOOD,
-    GROUPS.UP
-    // GROUPS.TURNING_RED
+    GROUPS.UP,
+    GROUPS.TURNING_RED
 ];
 
 const characterData = {
