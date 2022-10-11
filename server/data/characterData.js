@@ -2211,7 +2211,7 @@ const characterData = {
             },
             [CHARACTERS.MEILIN]: {
                 key: "meilin",
-                tokenRarities: [null, null],
+                tokenRarities: [E, L],
                 tokenName: "Flute"
             }
         },

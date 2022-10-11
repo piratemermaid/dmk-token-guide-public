@@ -173,19 +173,9 @@ async function updateTaskBuilding({ taskName, newBuildingName, level }) {
 
 async function manualUpdate() {
     await updateTaskCharacterLevel({
-        key: "A Quick Nap-Mr. Incredible",
-        name: "Mr. Incredible",
-        level: 3
-    });
-    await updateTaskCharacterLevel({
-        key: "Battle Syndrome-Mr. Incredible-Syndrome",
-        name: "Mr. Incredible",
-        level: 4
-    });
-    await updateTaskCharacterLevel({
-        key: `Time for Hugs-${CHARACTERS.ELASTIGIRL}-${CHARACTERS.JACKJACK}`,
-        name: CHARACTERS.ELASTIGIRL,
-        level: 4
+        key: `Attend a Ball-${CHARACTERS.CINDERELLA}-${CHARACTERS.CHARMING}`,
+        name: CHARACTERS.CINDERELLA,
+        level: 7
     });
 
     process.exit(0);
