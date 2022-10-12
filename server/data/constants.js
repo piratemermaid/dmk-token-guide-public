@@ -327,7 +327,12 @@ const CHARACTERS = {
     PRIYA: "Priya",
     MING_LEE: "Ming Lee",
     ABBY: "Abby",
-    MEILIN: 'Meilin "Mei" Lee'
+    MEILIN: 'Meilin "Mei" Lee',
+    WINIFRED_SANDERSON: "Winifred Sanderson",
+    MARY_SANDERSON: "Mary Sanderson",
+    SARAH_SANDERSON: "Sarah Sanderson",
+    DR_FINKELSTEIN: "Dr. Finkelstein",
+    MAURICE: "Maurice"
 };
 
 const GROUPS = {
@@ -380,7 +385,8 @@ const GROUPS = {
     PINOCCHIO: "Pinocchio",
     ROBINHOOD: "Robin Hood",
     UP: "Up",
-    TURNING_RED: "Turning Red"
+    TURNING_RED: "Turning Red",
+    HOCUS_POCUS: "Hocus Pocus"
 };
 
 const SPECIAL_ITEMS = {
@@ -617,6 +623,8 @@ const BUILDINGS = {
     CARL_HOUSE: "Carl's House",
     LEE_FAMILY_TEMPLE: "Lee Family Temple",
     TYLER_EPIC_PARTY: "Tyler's Epic Party",
+    SANDERSON_HOUSE: "The Sanderson House",
+    SALEM_CIRCUIT: "Salem Circuit",
 
     THE_HAUNTED_MANSION: "The Haunted Mansion",
     HAUNTED_MANSION: "Haunted Mansion",

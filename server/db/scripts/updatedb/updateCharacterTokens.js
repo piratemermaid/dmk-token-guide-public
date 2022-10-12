@@ -18,11 +18,11 @@ const ids = {
  */
 
 const characterTokenData = [
-    { name: CHARACTERS.MIRIAM, token: "C", ears: "C" },
-    { name: CHARACTERS.PRIYA, token: "C", ears: "U" },
-    { name: CHARACTERS.MING_LEE, token: "U", ears: "R" },
-    { name: CHARACTERS.ABBY, token: "R", ears: "E" },
-    { name: CHARACTERS.MEILIN, token: "E", ears: "L" }
+    { name: CHARACTERS.WINIFRED_SANDERSON, token: "N", ears: "N" },
+    { name: CHARACTERS.MARY_SANDERSON, token: "N", ears: "N" },
+    { name: CHARACTERS.SARAH_SANDERSON, token: "N", ears: "N" },
+    { name: CHARACTERS.DR_FINKELSTEIN, token: "N", ears: "N" },
+    { name: CHARACTERS.MAURICE, token: "N", ears: "N" }
 ];
 
 if (characterTokenData.length > 0) {

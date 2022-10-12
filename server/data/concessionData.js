@@ -1504,6 +1504,24 @@ const concessions = [
         obtain: "event",
         group: GROUPS.TURNING_RED,
         rarity: 4
+    },
+    {
+        name: "Fizzy Green Potion Stand",
+        time: null,
+        magic: null,
+        category: categories.drink,
+        obtain: "event",
+        group: GROUPS.HOCUS_POCUS,
+        rarity: null
+    },
+    {
+        name: "Winifred Sanderson Wig Stand",
+        time: null,
+        magic: null,
+        category: categories.headwear,
+        obtain: "event",
+        group: GROUPS.HOCUS_POCUS,
+        rarity: null
     }
 ];
 //end
