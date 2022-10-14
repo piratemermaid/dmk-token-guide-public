@@ -11,6 +11,7 @@ const { C, U, R, E, L } = TOKEN_RARITIES;
 const { magicCosts } = require("./magicCosts");
 
 const groupOrder = [
+    GROUPS.HOCUS_POCUS,
     "Mickey and Friends",
     "DuckTales",
     "Toy Story",
