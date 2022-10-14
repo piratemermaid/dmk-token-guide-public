@@ -21,8 +21,8 @@ const characterTokenData = [
     { name: CHARACTERS.WINIFRED_SANDERSON, token: "N", ears: "N" },
     { name: CHARACTERS.MARY_SANDERSON, token: "N", ears: "N" },
     { name: CHARACTERS.SARAH_SANDERSON, token: "N", ears: "N" },
-    { name: CHARACTERS.DR_FINKELSTEIN, token: "N", ears: "N" },
-    { name: CHARACTERS.MAURICE, token: "N", ears: "N" }
+    { name: CHARACTERS.DR_FINKELSTEIN, token: "C", ears: "U" },
+    { name: CHARACTERS.MAURICE, token: "R", ears: "E" }
 ];
 
 if (characterTokenData.length > 0) {

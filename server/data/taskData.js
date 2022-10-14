@@ -234,7 +234,8 @@ const taskData = [
         required: [{ type: REQ_TYPES.BUILDING, name: BUILDINGS.MINNIE_HOUSE }],
         tokens: [
             { name: CHARACTERS.SCROOGE, tokenType: TOKEN },
-            { name: CHARACTERS.MAXIMUS, tokenType: TOKEN }
+            { name: CHARACTERS.MAXIMUS, tokenType: TOKEN },
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
         ]
     },
     {
@@ -391,7 +392,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.PHILLIP, tokenType: EARS },
             { name: CHARACTERS.LUCA, tokenType: EARS },
-            { name: CHARACTERS.ABBY, tokenType: EARS, remove: true }
+            { name: CHARACTERS.ABBY, tokenType: EARS, remove: true },
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
         ]
     },
     {
@@ -1052,7 +1054,8 @@ const taskData = [
         time: "6h",
         tokens: [
             { name: CHARACTERS.NICK, tokenType: EARS },
-            { name: CHARACTERS.BALOO, tokenType: TOKEN }
+            { name: CHARACTERS.BALOO, tokenType: TOKEN },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: TOKEN }
         ]
     },
     {
@@ -1121,7 +1124,8 @@ const taskData = [
         required: [{ name: BUILDINGS.DONALD_BOAT, type: "building" }],
         tokens: [
             { name: CHARACTERS.ABBY, tokenType: TOKEN },
-            { name: CHARACTERS.PRIYA, tokenType: TOKEN }
+            { name: CHARACTERS.PRIYA, tokenType: TOKEN },
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
         ]
     },
     //daisy end
@@ -1339,7 +1343,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.ZURG, tokenType: TOKEN },
             { name: CHARACTERS.MOWGLI, tokenType: EARS },
-            { name: CHARACTERS.JOCK, tokenType: TOKEN }
+            { name: CHARACTERS.JOCK, tokenType: TOKEN },
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
         ]
     },
     {
@@ -1402,7 +1407,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.JUDY, tokenType: EARS },
             { name: CHARACTERS.DUMBO, tokenType: TOKEN },
-            { name: CHARACTERS.GIULIA, tokenType: TOKEN }
+            { name: CHARACTERS.GIULIA, tokenType: TOKEN },
+            { name: CHARACTERS.MAURICE, tokenType: EARS }
         ]
     },
     {
@@ -1443,7 +1449,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.JUDY, tokenType: TOKEN },
             { name: CHARACTERS.KING_LOUIE, tokenType: TOKEN },
-            { name: CHARACTERS.ROZ, tokenType: EARS }
+            { name: CHARACTERS.ROZ, tokenType: EARS },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: TOKEN }
         ]
     },
     {
@@ -4133,7 +4140,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.RAPUNZEL, tokenType: EARS },
             { name: CHARACTERS.PASCAL, tokenType: TOKEN },
-            { name: CHARACTERS.PINOCCHIO, tokenType: TOKEN }
+            { name: CHARACTERS.PINOCCHIO, tokenType: TOKEN },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: EARS }
         ]
     },
     {
@@ -4404,7 +4412,8 @@ const taskData = [
         required: [{ name: BUILDINGS.CYCLOPS_SUSHI, type: REQ_TYPES.BUILDING }],
         tokens: [
             { name: CHARACTERS.RANDALL, tokenType: TOKEN },
-            { name: CHARACTERS.MERRYWEATHER, tokenType: TOKEN }
+            { name: CHARACTERS.MERRYWEATHER, tokenType: TOKEN },
+            { name: CHARACTERS.MAURICE, tokenType: EARS }
         ]
     },
     {
@@ -4655,7 +4664,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.JUDY, tokenType: EARS },
             { name: CHARACTERS.BALOO, tokenType: TOKEN },
-            { name: CHARACTERS.PACHA, tokenType: EARS }
+            { name: CHARACTERS.PACHA, tokenType: EARS },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: EARS }
         ]
     },
     {
@@ -5002,6 +5012,13 @@ const taskData = [
         characters: [{ name: CHARACTERS.PHILLIP, level: 1 }],
         time: "1h",
         tokens: [{ name: GROUPS.SB, tokenType: COMMON }]
+    },
+    {
+        name: "Check for Maleficent",
+        characters: [{ name: CHARACTERS.PHILLIP, level: 1 }],
+        time: "4h",
+        required: [{ name: BUILDINGS.AURORA_SPINNING }],
+        tokens: [{ name: CHARACTERS.DR_FINKELSTEIN, tokenType: EARS }]
     },
     {
         name: "Visit the Fairies",
@@ -7151,7 +7168,8 @@ const taskData = [
             { name: CHARACTERS.ZERO, tokenType: EARS },
             { name: CHARACTERS.SALLY, tokenType: EARS },
             { name: CHARACTERS.MAYOR, tokenType: EARS },
-            { name: CHARACTERS.BARREL, tokenType: TOKEN }
+            { name: CHARACTERS.BARREL, tokenType: TOKEN },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: EARS }
         ]
     },
     {
@@ -7224,8 +7242,9 @@ const taskData = [
         time: "6h",
         required: [{ name: BUILDINGS.JACK_HOUSE, type: REQ_TYPES.BUILDING }],
         tokens: [
-            { name: CHARACTERS.MARCH_HARE, tokenType: TOKEN },
-            { name: CHARACTERS.SHOCK, tokenType: TOKEN }
+            { name: CHARACTERS.MARCH_HARE, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.SHOCK, tokenType: TOKEN },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: TOKEN }
         ]
     },
     {
@@ -7284,7 +7303,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.ZERO, tokenType: EARS },
             { name: CHARACTERS.OOGIE, tokenType: EARS },
-            { name: CHARACTERS.HOOK, tokenType: EARS }
+            { name: CHARACTERS.HOOK, tokenType: EARS, remove: true },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: TOKEN }
         ]
     },
     {
@@ -7396,7 +7416,8 @@ const taskData = [
         required: [{ name: BUILDINGS.FINKELSTEIN_TOWER, type: "building" }],
         tokens: [
             { name: CHARACTERS.ZERO, tokenType: TOKEN },
-            { name: CHARACTERS.OOGIE, tokenType: TOKEN }
+            { name: CHARACTERS.OOGIE, tokenType: TOKEN },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: EARS }
         ]
     },
     {
@@ -7454,7 +7475,10 @@ const taskData = [
         characters: [{ name: CHARACTERS.LOCK, level: 3 }],
         required: [{ name: BUILDINGS.FINKELSTEIN_TOWER, type: "building" }],
         time: "4h",
-        tokens: [{ name: CHARACTERS.SHOCK, tokenType: EARS }]
+        tokens: [
+            { name: CHARACTERS.SHOCK, tokenType: EARS },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: TOKEN }
+        ]
     },
     {
         name: "Knock Three Times",
@@ -7481,6 +7505,13 @@ const taskData = [
         tokens: []
     },
     {
+        name: "Pile of Dust!",
+        characters: [{ name: CHARACTERS.SHOCK, level: 4 }],
+        time: "4h",
+        required: [{ name: BUILDINGS.JACK_HOUSE }],
+        tokens: [{ name: CHARACTERS.DR_FINKELSTEIN, tokenType: EARS }]
+    },
+    {
         name: "Frightful Fun",
         characters: [{ name: CHARACTERS.SHOCK, level: 6 }],
         time: "6h",
@@ -7501,7 +7532,8 @@ const taskData = [
         time: "4h",
         tokens: [
             { name: CHARACTERS.LOCK, tokenType: TOKEN },
-            { name: CHARACTERS.SHOCK, tokenType: TOKEN }
+            { name: CHARACTERS.SHOCK, tokenType: TOKEN },
+            { name: CHARACTERS.DR_FINKELSTEIN, tokenType: TOKEN }
         ]
     },
     {
@@ -8564,7 +8596,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.LUMIERE, tokenType: TOKEN },
             { name: CHARACTERS.CHIP_POTTS, tokenType: TOKEN },
-            { name: CHARACTERS.CHIP_POTTS, tokenType: EARS }
+            { name: CHARACTERS.CHIP_POTTS, tokenType: EARS },
+            { name: CHARACTERS.MAURICE, tokenType: EARS }
         ]
     },
     {
@@ -8685,7 +8718,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.BELLE, tokenType: EARS },
             { name: CHARACTERS.GASTON, tokenType: TOKEN },
-            { name: CHARACTERS.GASTON, tokenType: EARS }
+            { name: CHARACTERS.GASTON, tokenType: EARS },
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
         ]
     },
     {
@@ -8756,7 +8790,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.FROZONE, tokenType: TOKEN },
             { name: CHARACTERS.COGSWORTH, tokenType: TOKEN },
-            { name: CHARACTERS.MRS_POTTS, tokenType: TOKEN }
+            { name: CHARACTERS.MRS_POTTS, tokenType: TOKEN },
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
         ]
     },
     {
@@ -8829,7 +8864,8 @@ const taskData = [
         time: "4h",
         tokens: [
             { name: CHARACTERS.BELLE, tokenType: EARS },
-            { name: CHARACTERS.SIMBA, tokenType: EARS }
+            { name: CHARACTERS.SIMBA, tokenType: EARS },
+            { name: CHARACTERS.MAURICE, tokenType: EARS }
         ]
     },
     {
@@ -8882,7 +8918,8 @@ const taskData = [
             { name: CHARACTERS.SVEN, tokenType: EARS },
             { name: CHARACTERS.BELLE, tokenType: TOKEN },
             { name: CHARACTERS.LUMIERE, tokenType: TOKEN },
-            { name: CHARACTERS.PLEAKLEY, tokenType: EARS }
+            { name: CHARACTERS.PLEAKLEY, tokenType: EARS },
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
         ]
     },
     {
@@ -8941,7 +8978,8 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.JUMBA, tokenType: TOKEN },
             { name: CHARACTERS.JUMBA, tokenType: EARS },
-            { name: CHARACTERS.LEFOU, tokenType: EARS }
+            { name: CHARACTERS.LEFOU, tokenType: EARS },
+            { name: CHARACTERS.MAURICE, tokenType: EARS }
         ]
     },
     //gaston
@@ -8969,7 +9007,8 @@ const taskData = [
         time: "4h",
         tokens: [
             { name: CHARACTERS.BEAST, tokenType: TOKEN },
-            { name: CHARACTERS.COGSWORTH, tokenType: EARS }
+            { name: CHARACTERS.COGSWORTH, tokenType: EARS },
+            { name: CHARACTERS.MAURICE, tokenType: EARS }
         ]
     },
     {
@@ -9025,7 +9064,10 @@ const taskData = [
         name: "Song and Dance",
         characters: [{ name: CHARACTERS.LEFOU, level: 4 }],
         time: "6h",
-        tokens: [{ name: CHARACTERS.CHIP_POTTS, tokenType: EARS }]
+        tokens: [
+            { name: CHARACTERS.CHIP_POTTS, tokenType: EARS },
+            { name: CHARACTERS.MAURICE, tokenType: EARS }
+        ]
     },
     {
         name: "Create Mischief",

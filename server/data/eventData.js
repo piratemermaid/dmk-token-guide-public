@@ -17,37 +17,28 @@ const NO_EVENT = {
 /////////////////////////////////////////////////////////////
 
 const REGULAR = {
-    NAME: GROUPS.TURNING_RED,
+    NAME: GROUPS.HOCUS_POCUS,
     TYPE: "Regular",
     DATES: {
-        1: "September 15",
-        2: "September 18",
-        3: "September 24",
-        4: "October 1"
+        1: "October 20",
+        2: "October 22",
+        3: "October 29"
     },
     GROUPS: [
-        { name: GROUPS.TURNING_RED, type: "featured" }
-        // { name: GROUPS.SNOW_WHITE, type: "helper" }
+        { name: GROUPS.HOCUS_POCUS, type: "featured" },
+        { name: GROUPS.AIW, type: "helper" }
     ],
     CHARACTERS: [
         {
-            name: CHARS.MIRIAM,
-            req_levels: { 1: 3, 2: 4, 3: null, 4: null }
+            name: CHARS.SARAH_SANDERSON,
+            req_levels: { 1: null, 2: null, 3: null }
         },
         {
-            name: CHARS.PRIYA,
-            req_levels: { 1: null, 2: 3, 3: null, 4: null }
+            name: CHARS.WINIFRED_SANDERSON,
+            req_levels: { 1: null, 2: null, 3: null }
         },
         {
-            name: CHARS.ABBY,
-            req_levels: { 1: null, 2: null, 3: null, 4: null }
-        },
-        {
-            name: CHARS.MEILIN,
-            req_levels: { 1: null, 2: null, 3: null, 4: null }
-        },
-        {
-            name: CHARS.MING_LEE,
+            name: CHARS.MARY_SANDERSON,
             premium: true
         }
     ],

@@ -867,9 +867,15 @@ const characterData = {
                 key: "barrel",
                 tokenRarities: [C, U],
                 tokenName: null
+            },
+            [CHARACTERS.DR_FINKELSTEIN]: {
+                key: "drfinkelstein",
+                tokenRarities: [C, U],
+                tokenName: "Brain Half"
             }
         },
         floatTokens: [
+            { name: GROUPS.NBC, tokenType: COMMON },
             { name: CHARACTERS.ZERO, type: "character", tokenType: TOKEN },
             {
                 name: CHARACTERS.JACK_SKELLINGTON,
@@ -1014,7 +1020,16 @@ const characterData = {
                 tokenRarities: [E, E],
                 tokenName: "Quiver"
             },
-            LeFou: { key: "lefou", tokenRarities: [R, E], tokenName: "Bow Tie" }
+            LeFou: {
+                key: "lefou",
+                tokenRarities: [R, E],
+                tokenName: "Bow Tie"
+            },
+            [CHARACTERS.MAURICE]: {
+                key: "maurice",
+                tokenRarities: [R, E],
+                tokenName: "Inventor Helmet"
+            }
         },
         floatTokens: [
             { name: CHARACTERS.BELLE, type: "character", tokenType: EARS },
@@ -2221,6 +2236,27 @@ const characterData = {
             { name: CHARACTERS.MING_LEE, tokenType: EARS },
             { name: CHARACTERS.PRIYA, tokenType: EARS }
         ]
+    },
+    [GROUPS.HOCUS_POCUS]: {
+        key: "hocuspocus",
+        characters: {
+            [CHARACTERS.WINIFRED_SANDERSON]: {
+                key: "winifredsanderson",
+                tokenRarities: [null, null],
+                tokenName: "Broom"
+            },
+            [CHARACTERS.MARY_SANDERSON]: {
+                key: "marysanderson",
+                tokenRarities: [null, null],
+                tokenName: "Cauldron"
+            },
+            [CHARACTERS.SARAH_SANDERSON]: {
+                key: "sarahsanderson",
+                tokenRarities: [null, null],
+                tokenName: "Pretty Spider"
+            }
+        },
+        floatTokens: []
     }
 };
 //end
