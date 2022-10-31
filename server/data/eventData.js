@@ -170,4 +170,4 @@ const CASCADING = {
 };
 
 // options: NO_EVENT, REGULAR, PERM_CONTENT, MINI, CASCADING, TC
-module.exports = NO_EVENT;
+module.exports = REGULAR;
