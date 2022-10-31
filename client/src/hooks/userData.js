@@ -22,7 +22,11 @@ export function useUserCharacters() {
             staleTime: CACHE_TIME
         }
     );
-    return query.data?.data?.characters;
+
+    return {
+        data: query.data?.data?.characters,
+        isFetching: query.data?.isFetching
+    };
 }
 
 export function useUserBuildings() {

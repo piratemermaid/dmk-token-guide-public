@@ -17,5 +17,6 @@ export default {
     ACCOUNT: "/account",
     GENERATOR: "/generator",
     GENERATOR_TASK: "/generator/task",
-    EOL: "/eol"
+    EOL: "/eol",
+    EOL_UPDATE: "/eol_update"
 };
