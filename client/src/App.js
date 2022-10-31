@@ -21,7 +21,7 @@ import {
 } from "./redux/actions/appState";
 import { LS } from "./utils/globals";
 
-const CLIENT_VERSION = "2.6.4";
+const CLIENT_VERSION = "2.6.5";
 
 const App = () => {
     const [levelFilters, setLevelFilters] = useState([]);

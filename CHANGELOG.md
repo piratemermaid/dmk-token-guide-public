@@ -2,9 +2,17 @@
 
 ## Unreleased
 
+## 2.6.5
+
+### Added
+
+-   EOL update and data export
+
 ## 2.6.4
 
--   Added EOL warning
+### Added
+
+-   EOL warning
 
 ### Changed
 

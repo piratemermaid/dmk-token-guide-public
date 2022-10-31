@@ -1,5 +1,5 @@
 module.exports = {
-    version: "2.6.4", // increment with updates and increment in App.js too
+    version: "2.6.5", // increment with updates and increment in App.js too
     fix: [
         {
             desc: "Leveling page not loading for some users - I am working on refactoring the page entirely",
