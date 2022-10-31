@@ -56,9 +56,10 @@ const taskData = [
         characters: [{ name: CHARACTERS.MICKEY, level: 3 }],
         time: "2h",
         tokens: [
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
             { name: CHARACTERS.GOOFY, tokenType: EARS },
             { name: CHARACTERS.HAMM, tokenType: TOKEN },
-            { name: CHARACTERS.BEAST, tokenType: EARS }
+            { name: CHARACTERS.BEAST, tokenType: EARS, remove: true }
         ]
     },
     {
@@ -311,12 +312,13 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.PLUTO, tokenType: EARS },
-            { name: CHARACTERS.CINDERELLA, tokenType: EARS },
+            { name: CHARACTERS.CINDERELLA, tokenType: EARS, remove: true },
             { name: CHARACTERS.ELSA, tokenType: EARS, remove: true },
             { name: CHARACTERS.COLT, tokenType: TOKEN, remove: true },
             { name: CHARACTERS.LORD_MACINTOSH, tokenType: TOKEN, remove: true },
             { name: CHARACTERS.MACHIAVELLI, tokenType: EARS, remove: true },
-            { name: CHARACTERS.RUSSELL, tokenType: TOKEN }
+            { name: CHARACTERS.RUSSELL, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -391,9 +393,10 @@ const taskData = [
         required: [{ name: BUILDINGS.DAISY_DINER, type: REQ_TYPES.BUILDING }],
         tokens: [
             { name: CHARACTERS.PHILLIP, tokenType: EARS },
-            { name: CHARACTERS.LUCA, tokenType: EARS },
+            { name: CHARACTERS.LUCA, tokenType: EARS, remove: true },
             { name: CHARACTERS.ABBY, tokenType: EARS, remove: true },
-            { name: CHARACTERS.MAURICE, tokenType: TOKEN }
+            { name: CHARACTERS.MAURICE, tokenType: TOKEN },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -789,8 +792,10 @@ const taskData = [
         time: "1h",
         required: [{ name: BUILDINGS.MICKEY_HOUSE, type: REQ_TYPES.BUILDING }],
         tokens: [
+            { name: GROUPS.MF, tokenType: COMMON },
             { name: CHARACTERS.MICKEY, tokenType: TOKEN },
-            { name: GROUPS.STAR_WARS, tokenType: COMMON }
+            { name: GROUPS.STAR_WARS, tokenType: COMMON, remove: true },
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON }
         ]
     },
     {
@@ -837,7 +842,10 @@ const taskData = [
             },
             { name: CHARACTERS.LUKE_SKYWALKER, tokenType: TOKEN, remove: true },
             { name: CHARACTERS.LUKE_SKYWALKER, tokenType: EARS, remove: true },
-            { name: GROUPS.UP, tokenType: COMMON }
+            { name: GROUPS.UP, tokenType: COMMON, remove: true },
+            { name: CHARACTERS.ANNA, tokenType: TOKEN },
+            { name: CHARACTERS.MAD_HATTER, tokenType: TOKEN },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -1735,13 +1743,14 @@ const taskData = [
         time: "4h",
         tokens: [
             { name: CHARACTERS.CHARMING, tokenType: EARS },
-            { name: CHARACTERS.CHIP_POTTS, tokenType: EARS },
+            { name: CHARACTERS.CHIP_POTTS, tokenType: EARS, remove: true },
             { name: CHARACTERS.SCUTTLE, tokenType: EARS, remove: true },
             { name: CHARACTERS.SPAMLEY, tokenType: EARS, remove: true },
             { name: CHARACTERS.C3PO, tokenType: EARS, remove: true },
-            { name: CHARACTERS.RUSSELL, tokenType: EARS },
+            { name: CHARACTERS.RUSSELL, tokenType: EARS, remove: true },
             { name: CHARACTERS.ABBY, tokenType: TOKEN, remove: true },
-            { name: GROUPS.UP, tokenType: COMMON }
+            { name: GROUPS.UP, tokenType: COMMON, remove: true },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -1830,9 +1839,10 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.SARGE, tokenType: TOKEN },
-            { name: CHARACTERS.PERCY, tokenType: TOKEN },
-            { name: CHARACTERS.LUKE_SKYWALKER, tokenType: TOKEN },
-            { name: CHARACTERS.LUKE_SKYWALKER, tokenType: EARS }
+            { name: CHARACTERS.PERCY, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.LUKE_SKYWALKER, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.LUKE_SKYWALKER, tokenType: EARS, remove: true },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -1880,10 +1890,11 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.BO_PEEP, tokenType: EARS },
-            { name: CHARACTERS.RAPUNZEL, tokenType: EARS },
-            { name: CHARACTERS.CRUSH, tokenType: TOKEN },
-            { name: CHARACTERS.HONEYMAREN, tokenType: EARS },
-            { name: CHARACTERS.POE, tokenType: EARS }
+            { name: CHARACTERS.RAPUNZEL, tokenType: EARS, remove: true },
+            { name: CHARACTERS.CRUSH, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.HONEYMAREN, tokenType: EARS, remove: true },
+            { name: CHARACTERS.POE, tokenType: EARS, remove: true },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -1943,7 +1954,8 @@ const taskData = [
         time: "2h",
         tokens: [
             { name: CHARACTERS.MINNIE, tokenType: EARS },
-            { name: CHARACTERS.LORD_DINGWALL, tokenType: EARS }
+            { name: CHARACTERS.LORD_DINGWALL, tokenType: EARS },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -1964,11 +1976,13 @@ const taskData = [
             { name: BUILDINGS.JESSIE_SNACK_ROUNDUP, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.BO_PEEP, tokenType: TOKEN },
-            { name: CHARACTERS.VIOLET, tokenType: EARS },
+            { name: CHARACTERS.BO_PEEP, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.VIOLET, tokenType: EARS, remove: true },
             { name: CHARACTERS.HONEY_LEMON, tokenType: EARS },
             { name: CHARACTERS.ERCOLE, tokenType: TOKEN },
-            { name: CHARACTERS.ALADDIN, tokenType: TOKEN }
+            { name: CHARACTERS.ALADDIN, tokenType: TOKEN },
+            { name: CHARACTERS.SCUTTLE, tokenType: EARS },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -2031,10 +2045,11 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.WOODY, tokenType: EARS },
-            { name: CHARACTERS.SARGE, tokenType: TOKEN },
-            { name: CHARACTERS.LUMIERE, tokenType: TOKEN },
+            { name: CHARACTERS.SARGE, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.LUMIERE, tokenType: TOKEN, remove: true },
             { name: CHARACTERS.MARCH_HARE, tokenType: EARS },
-            { name: CHARACTERS.FINN, tokenType: EARS },
+            { name: CHARACTERS.FINN, tokenType: EARS, remove: true },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS },
             {
                 name: SPECIAL_ITEMS.REFRESH_TOKEN,
                 tokenType: SPECIAL,
@@ -2124,7 +2139,9 @@ const taskData = [
             { name: CHARACTERS.RANDALL, tokenType: TOKEN },
             { name: CHARACTERS.RAPUNZEL, tokenType: TOKEN },
             { name: CHARACTERS.FAUNA, tokenType: EARS },
-            { name: CHARACTERS.ABBY, tokenType: TOKEN, remove: true }
+            { name: CHARACTERS.PANIC, tokenType: TOKEN },
+            { name: CHARACTERS.ABBY, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -2476,10 +2493,11 @@ const taskData = [
         characters: [{ name: CHARACTERS.HAMM, level: 1 }],
         time: "1h",
         tokens: [
-            { name: GROUPS.TS, tokenType: COMMON },
-            { name: CHARACTERS.PUMBAA, tokenType: TOKEN },
-            { name: CHARACTERS.CARPET, tokenType: EARS },
-            { name: CHARACTERS.DOPEY, tokenType: TOKEN }
+            { name: GROUPS.TS, tokenType: COMMON, remove: true },
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
+            { name: CHARACTERS.PUMBAA, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.CARPET, tokenType: EARS, remove: true },
+            { name: CHARACTERS.DOPEY, tokenType: TOKEN, remove: true }
         ]
     },
     {
@@ -2507,9 +2525,10 @@ const taskData = [
         time: "4h",
         tokens: [
             { name: CHARACTERS.REX, tokenType: EARS },
-            { name: CHARACTERS.WILL_TURNER, tokenType: EARS },
-            { name: CHARACTERS.LUKE_SKYWALKER, tokenType: EARS },
-            { name: CHARACTERS.PRIYA, tokenType: TOKEN, remove: true }
+            { name: CHARACTERS.WILL_TURNER, tokenType: EARS, remove: true },
+            { name: CHARACTERS.LUKE_SKYWALKER, tokenType: EARS, remove: true },
+            { name: CHARACTERS.PRIYA, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -2625,7 +2644,8 @@ const taskData = [
         required: [{ name: BUILDINGS.AL_TOY_BARN, type: REQ_TYPES.BUILDING }],
         tokens: [
             { name: CHARACTERS.WOODY, tokenType: EARS },
-            { name: CHARACTERS.RUSSELL, tokenType: TOKEN },
+            { name: CHARACTERS.RUSSELL, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: EARS },
             {
                 name: SPECIAL_ITEMS.STRING,
                 type: "mini_event",
@@ -2680,7 +2700,14 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.BO_PEEP, tokenType: EARS },
             { name: CHARACTERS.PENNY, tokenType: TOKEN, remove: true },
-            { name: CHARACTERS.CARL_FREDRICKSEN, tokenType: TOKEN }
+            { name: CHARACTERS.OLAF, tokenType: EARS },
+            { name: CHARACTERS.COBRA_BUBBLES, tokenType: TOKEN },
+            {
+                name: CHARACTERS.CARL_FREDRICKSEN,
+                tokenType: TOKEN,
+                remove: true
+            },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: TOKEN }
         ]
     },
     //sarge end
@@ -3078,9 +3105,14 @@ const taskData = [
         level: 2,
         required: [{ name: BUILDINGS.FANTASY_FAIRE }],
         tokens: [
-            { name: CHARACTERS.ANASTASIA, tokenType: TOKEN },
-            { name: CHARACTERS.BB8, tokenType: TOKEN },
-            { name: CHARACTERS.JACK_SKELLINGTON, tokenType: EARS }
+            { name: CHARACTERS.ANASTASIA, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.BB8, tokenType: TOKEN, remove: true },
+            {
+                name: CHARACTERS.JACK_SKELLINGTON,
+                tokenType: EARS,
+                remove: true
+            },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -3145,8 +3177,9 @@ const taskData = [
             }
         ],
         tokens: [
-            { name: CHARACTERS.JOE, tokenType: EARS },
-            { name: CHARACTERS.GEPPETTO, tokenType: EARS }
+            { name: CHARACTERS.JOE, tokenType: EARS, remove: true },
+            { name: CHARACTERS.GEPPETTO, tokenType: EARS, remove: true },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN }
         ]
     },
     //cinderella end
@@ -3169,7 +3202,8 @@ const taskData = [
             { name: CHARACTERS.CINDERELLA, tokenType: TOKEN },
             { name: CHARACTERS.ELIZABETH, tokenType: TOKEN },
             { name: CHARACTERS.JACK_SKELLINGTON, tokenType: TOKEN },
-            { name: CHARACTERS.KANGA, tokenType: TOKEN }
+            { name: CHARACTERS.KANGA, tokenType: TOKEN },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -3203,11 +3237,16 @@ const taskData = [
             { name: BUILDINGS.PRINCESS_FAIRYTALE, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
-            { name: CHARACTERS.TIMOTHY, tokenType: EARS },
+            { name: CHARACTERS.TIMOTHY, tokenType: EARS, remove: true },
             { name: CHARACTERS.NEMO, tokenType: TOKEN, remove: true },
             { name: CHARACTERS.BB8, tokenType: EARS, remove: true },
-            { name: CHARACTERS.CARL_FREDRICKSEN, tokenType: TOKEN },
-            { name: CHARACTERS.PRIYA, tokenType: EARS, remove: true }
+            {
+                name: CHARACTERS.CARL_FREDRICKSEN,
+                tokenType: TOKEN,
+                remove: true
+            },
+            { name: CHARACTERS.PRIYA, tokenType: EARS, remove: true },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -3245,12 +3284,13 @@ const taskData = [
             }
         ],
         tokens: [
-            { name: CHARACTERS.DRIZELLA, tokenType: TOKEN },
-            { name: CHARACTERS.TREMAINE, tokenType: EARS },
-            { name: CHARACTERS.TIGGER, tokenType: EARS },
-            { name: CHARACTERS.GOGO, tokenType: EARS },
-            { name: CHARACTERS.BOUN, tokenType: TOKEN },
-            { name: CHARACTERS.BLUE_FAIRY, tokenType: EARS }
+            { name: CHARACTERS.DRIZELLA, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.TREMAINE, tokenType: EARS, remove: true },
+            { name: CHARACTERS.TIGGER, tokenType: EARS, remove: true },
+            { name: CHARACTERS.GOGO, tokenType: EARS, remove: true },
+            { name: CHARACTERS.BOUN, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.BLUE_FAIRY, tokenType: EARS, remove: true },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -3259,12 +3299,17 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.FANTASY_FAIRE, type: "building" }],
         tokens: [
-            { name: CHARACTERS.CHARMING, tokenType: TOKEN },
-            { name: CHARACTERS.GOGO, tokenType: TOKEN },
-            { name: CHARACTERS.FRED, tokenType: TOKEN },
-            { name: CHARACTERS.BARLEY, tokenType: TOKEN },
-            { name: CHARACTERS.THE_MANDALORIAN, tokenType: TOKEN },
-            { name: CHARACTERS.LUCA, tokenType: EARS }
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
+            { name: CHARACTERS.CHARMING, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.GOGO, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.FRED, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.BARLEY, tokenType: TOKEN, remove: true },
+            {
+                name: CHARACTERS.THE_MANDALORIAN,
+                tokenType: TOKEN,
+                remove: true
+            },
+            { name: CHARACTERS.LUCA, tokenType: EARS, remove: true }
         ]
     },
     {
@@ -3475,7 +3520,12 @@ const taskData = [
             { name: CHARACTERS.BELLE, tokenType: TOKEN, remove: true },
             { name: CHARACTERS.RABBIT, tokenType: EARS, remove: true },
             { name: CHARACTERS.NANI, tokenType: EARS, remove: true },
-            { name: CHARACTERS.CARL_FREDRICKSEN, tokenType: TOKEN }
+            {
+                name: CHARACTERS.CARL_FREDRICKSEN,
+                tokenType: TOKEN,
+                remove: true
+            },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -3502,6 +3552,8 @@ const taskData = [
             { name: CHARACTERS.MIKE, tokenType: EARS },
             { name: CHARACTERS.CELIA, tokenType: TOKEN },
             { name: CHARACTERS.JOCK, tokenType: EARS },
+            { name: CHARACTERS.CHESHIRE, tokenType: EARS },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: EARS },
             {
                 name: SPECIAL_ITEMS.REFRESH_TOKEN,
                 tokenType: SPECIAL,
@@ -4081,9 +4133,10 @@ const taskData = [
         tokens: [
             { name: CHARACTERS.ROZ, tokenType: EARS },
             { name: CHARACTERS.ROBIN_HOOD, tokenType: TOKEN, remove: true },
-            { name: CHARACTERS.KEVIN, tokenType: TOKEN },
-            { name: CHARACTERS.ABBY, tokenType: EARS },
-            { name: CHARACTERS.MING_LEE, tokenType: EARS }
+            { name: CHARACTERS.KEVIN, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.ABBY, tokenType: EARS, remove: true },
+            { name: CHARACTERS.MING_LEE, tokenType: EARS, remove: true },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -4367,7 +4420,13 @@ const taskData = [
         required: [
             { name: BUILDINGS.MONSTERS_LAUGH, type: REQ_TYPES.BUILDING }
         ],
-        tokens: [{ name: CHARACTERS.BAMBI, tokenType: TOKEN }]
+        tokens: [
+            { name: CHARACTERS.BO_PEEP, tokenType: TOKEN },
+            { name: CHARACTERS.HAMM, tokenType: TOKEN },
+            { name: CHARACTERS.BAMBI, tokenType: TOKEN, remove: true },
+            { name: CHARACTERS.MAD_HATTER, tokenType: EARS },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS }
+        ]
     },
     {
         name: "Sushi Dinner",
@@ -10133,7 +10192,10 @@ const taskData = [
         name: "Curiouser and Curiouser",
         characters: [{ name: CHARACTERS.ALICE, level: 1 }],
         time: "1h",
-        tokens: [{ name: GROUPS.AIW, tokenType: COMMON }]
+        tokens: [
+            { name: GROUPS.AIW, tokenType: COMMON },
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON }
+        ]
     },
     {
         name: "Sing with the Flowers",
@@ -10248,6 +10310,18 @@ const taskData = [
         required: [{ name: BUILDINGS.TWEEDLE_WACKY, type: REQ_TYPES.BUILDING }],
         tokens: [{ name: CHARACTERS.ALICE, tokenType: EARS }]
     },
+    {
+        name: "Very Merry Unbirthday",
+        characters: [
+            { name: CHARACTERS.MAD_HATTER, level: 6 },
+            { name: CHARACTERS.MARCH_HARE, level: 8 }
+        ],
+        time: "6h",
+        tokens: [
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN }
+        ]
+    },
     //white rabbit
     {
         name: "Checking the Time",
@@ -10268,7 +10342,8 @@ const taskData = [
         ],
         tokens: [
             { name: CHARACTERS.WHITE_RABBIT, tokenType: EARS },
-            { name: CHARACTERS.CHESHIRE, tokenType: EARS }
+            { name: CHARACTERS.CHESHIRE, tokenType: EARS },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -10287,6 +10362,7 @@ const taskData = [
         time: "2h",
         required: [{ name: BUILDINGS.WHITE_RABBIT_HOUSE }],
         tokens: [
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
             { name: CHARACTERS.MARCH_HARE, tokenType: EARS },
             { name: CHARACTERS.CATERPILLAR, tokenType: TOKEN }
         ]
@@ -10312,7 +10388,10 @@ const taskData = [
         required: [
             { name: BUILDINGS.GOLDEN_AFTERNOON, type: REQ_TYPES.BUILDING }
         ],
-        tokens: [{ name: CHARACTERS.CATERPILLAR, tokenType: TOKEN }]
+        tokens: [
+            { name: CHARACTERS.CATERPILLAR, tokenType: TOKEN },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS }
+        ]
     },
     {
         name: "Nothing Whatever!",
@@ -10363,9 +10442,11 @@ const taskData = [
             { name: BUILDINGS.GOLDEN_AFTERNOON, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
             { name: CHARACTERS.MAD_HATTER, tokenType: EARS },
             { name: CHARACTERS.MARCH_HARE, tokenType: TOKEN },
-            { name: CHARACTERS.CHESHIRE, tokenType: TOKEN }
+            { name: CHARACTERS.CHESHIRE, tokenType: TOKEN },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -10410,8 +10491,10 @@ const taskData = [
         time: "4h",
         required: [{ name: BUILDINGS.TWEEDLE_WACKY, type: REQ_TYPES.BUILDING }],
         tokens: [
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
             { name: CHARACTERS.WHITE_RABBIT, tokenType: EARS },
-            { name: CHARACTERS.QUEEN_OF_HEARTS, tokenType: TOKEN }
+            { name: CHARACTERS.QUEEN_OF_HEARTS, tokenType: TOKEN },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS }
         ]
     },
     {
@@ -10438,6 +10521,7 @@ const taskData = [
             { name: BUILDINGS.GOLDEN_AFTERNOON, type: REQ_TYPES.BUILDING }
         ],
         tokens: [
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
             { name: CHARACTERS.CATERPILLAR, tokenType: EARS },
             { name: CHARACTERS.CHESHIRE, tokenType: TOKEN }
         ]
@@ -14372,7 +14456,8 @@ const taskData = [
         required: [{ name: BUILDINGS.MUSICAL_CELEBRATION, type: "building" }],
         tokens: [
             { name: CHARACTERS.HECTOR, tokenType: TOKEN },
-            { name: CHARACTERS.HECTOR, tokenType: EARS }
+            { name: CHARACTERS.HECTOR, tokenType: EARS },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN }
         ]
     },
     {
@@ -18646,8 +18731,58 @@ const taskData = [
             { name: CHARACTERS.MING_LEE, tokenType: EARS },
             { name: CHARACTERS.ABBY, tokenType: EARS }
         ]
-    }
+    },
     //meilin end
+    //mary sanderson
+    {
+        name: "Smell for Children",
+        characters: [{ name: CHARACTERS.MARY_SANDERSON, level: 1 }],
+        time: "1h",
+        tokens: [{ name: GROUPS.HOCUS_POCUS, tokenType: COMMON }]
+    },
+    {
+        name: "Be Confused by Surroundings",
+        characters: [{ name: CHARACTERS.MARY_SANDERSON, level: 2 }],
+        time: "2h",
+        required: [{ name: BUILDINGS.SALEM_CIRCUIT }],
+        tokens: [{ name: CHARACTERS.SARAH_SANDERSON, tokenType: EARS }]
+    },
+    {
+        name: "Hide from Witch Hunters",
+        characters: [{ name: CHARACTERS.MARY_SANDERSON, level: 4 }],
+        time: "4h",
+        tokens: [{ name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS }]
+    },
+    //mary sanderson end
+    //sarah sanderson
+    {
+        name: "Cruel Celebration",
+        characters: [{ name: CHARACTERS.MARY_SANDERSON, level: 1 }],
+        time: "1h",
+        tokens: [{ name: GROUPS.HOCUS_POCUS, tokenType: COMMON }]
+    },
+    {
+        name: "Eat a Pretty Spider",
+        characters: [{ name: CHARACTERS.MARY_SANDERSON, level: 2 }],
+        time: "2h",
+        tokens: [{ name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN }]
+    },
+    {
+        name: 'Hide from "Burning Rain"',
+        characters: [{ name: CHARACTERS.MARY_SANDERSON, level: 4 }],
+        time: "4h",
+        required: [{ name: BUILDINGS.SANDERSON_HOUSE }],
+        tokens: [{ name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN }]
+    },
+    //sarah sanderson end
+    //winnifred sanderson
+    {
+        name: "Practice Spellcasting",
+        characters: [{ name: CHARACTERS.MARY_SANDERSON, level: 1 }],
+        time: "1h",
+        tokens: [{ name: GROUPS.HOCUS_POCUS, tokenType: COMMON }]
+    }
+    //winnifred sanderson end
 ];
 //endtasks
 

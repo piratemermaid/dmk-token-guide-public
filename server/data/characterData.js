@@ -2243,21 +2243,27 @@ const characterData = {
         characters: {
             [CHARACTERS.WINIFRED_SANDERSON]: {
                 key: "winifredsanderson",
-                tokenRarities: [null, null],
+                tokenRarities: [E, L],
                 tokenName: "Broom"
             },
             [CHARACTERS.MARY_SANDERSON]: {
                 key: "marysanderson",
-                tokenRarities: [null, null],
+                tokenRarities: [U, R],
                 tokenName: "Cauldron"
             },
             [CHARACTERS.SARAH_SANDERSON]: {
                 key: "sarahsanderson",
-                tokenRarities: [null, null],
+                tokenRarities: [C, C],
                 tokenName: "Pretty Spider"
             }
         },
-        floatTokens: []
+        floatTokens: [
+            { name: GROUPS.HOCUS_POCUS, tokenType: COMMON },
+            { name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN },
+            { name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: TOKEN },
+            { name: CHARACTERS.SARAH_SANDERSON, tokenType: EARS }
+        ]
     }
 };
 //end

@@ -1051,6 +1051,36 @@ const buildingList = [
         ]
     },
     //turning red end
+    //hocus pocus
+    {
+        name: BUILDINGS.SANDERSON_HOUSE,
+        theme: null,
+        group: GROUPS.TURNING_RED,
+        enchantment_group: GROUPS.TURNING_RED,
+        unlock_type: BUILDING_CATEGORIES.EVENT,
+        unlock_info: "Hocus Pocus event",
+        time: "8h",
+        tokens: [
+            { level: 0, name: CHARACTERS.SARAH_SANDERSON, tokenType: EARS },
+            { level: 2, name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN },
+            { level: 4, name: CHARACTERS.WINIFRED_SANDERSON, tokenType: EARS }
+        ]
+    },
+    {
+        name: BUILDINGS.SALEM_CIRCUIT,
+        theme: null,
+        group: GROUPS.TURNING_RED,
+        enchantment_group: GROUPS.TURNING_RED,
+        unlock_type: BUILDING_CATEGORIES.EVENT,
+        unlock_info: "Hocus Pocus event",
+        time: "8h",
+        tokens: [
+            { level: 0, name: CHARACTERS.SARAH_SANDERSON, tokenType: TOKEN },
+            { level: 2, name: CHARACTERS.MARY_SANDERSON, tokenType: TOKEN },
+            { level: 4, name: CHARACTERS.WINIFRED_SANDERSON, tokenType: TOKEN }
+        ]
+    },
+    //hocus pocus end
     //incredibles
     {
         name: BUILDINGS.OMNIDROID_OBSTACLE,
