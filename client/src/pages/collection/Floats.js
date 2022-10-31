@@ -7,7 +7,7 @@ import {
 } from "../../redux/actions/userData";
 import CollectionPage from "../../components/Page/CollectionPage";
 import ScrollToTop from "./ScrollToTop";
-import { getImgNameNew } from "../../utils/utils";
+import FloatImg from "../../components/images/FloatImg";
 
 const Floats = (props) => {
     const { appData, userData, appState } = props;
@@ -46,14 +46,7 @@ const Floats = (props) => {
                         {obtained ? (
                             <div className="coll-obtained-bg coll-float-obtained-bg"></div>
                         ) : null}
-                        <img
-                            src={`/img/webp/floats/Pf-${getImgNameNew(
-                                name
-                            )}.webp`}
-                            alt={name}
-                            title={name}
-                            className="coll-float-img"
-                        />
+                        <FloatImg name={name} className="coll-float-img" />
                         <p className="coll-float-name">{name}</p>
                     </div>
                 );

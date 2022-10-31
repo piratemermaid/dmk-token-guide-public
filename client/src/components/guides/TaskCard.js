@@ -5,6 +5,7 @@ import Loading from "../states/Loading";
 import { TokenImg } from "../images";
 import { getImgName, buildingWarning, floatWarning } from "../../utils/utils";
 import CharacterTaskRow from "./CharacterTaskRow";
+import FloatImg from "../images/FloatImg";
 
 /**
  * TaskCard displays the tasks to get the designated token (token, ears, or coll)
@@ -136,10 +137,8 @@ export const TaskCard = (props) => {
                         <tr key={name} className={taskRowClass}>
                             <td className="col m3 s4">
                                 {" "}
-                                <img
-                                    src={`/img/floats/${getImgName(name)}.png`}
-                                    alt="float"
-                                    title="float"
+                                <FloatImg
+                                    name={name}
                                     className={`task-row-float 
                                         ${
                                             nightMode
