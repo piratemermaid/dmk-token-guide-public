@@ -34,10 +34,6 @@ import NotFound from "../../pages/NotFound";
 import Generator from "../pages/generator/Generator";
 import TaskGenerator from "../pages/generator/Task";
 import CheckOutOfDate from "../CheckOutOfDate";
-import EOLWarning from "../EOLWarning";
-import EOLPage from "../../pages/EOLPage";
-import EOLUpdate from "../EOLUpdate";
-import EOLUpdatePage from "../../pages/EOLUpdatePage";
 
 const Router = ({
     userVersion,
@@ -89,15 +85,8 @@ const Router = ({
         <BrowserRouter>
             <div className={workMode ? "workMode" : ""}>
                 <Header />
-                <EOLUpdate />
-                <EOLWarning />
                 <CheckOutOfDate userVersion={userVersion} />
                 <Switch>
-                    <Route path={ROUTES.EOL} render={() => <EOLPage />} />
-                    <Route
-                        path={ROUTES.EOL_UPDATE}
-                        render={() => <EOLUpdatePage />}
-                    />
                     <Route path="/login" render={() => <Login />} />
                     <Route path="/signup" render={() => <Signup />} />
                     <Route

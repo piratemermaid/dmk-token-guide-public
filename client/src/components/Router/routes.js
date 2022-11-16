@@ -16,7 +16,5 @@ export default {
     DEV_NOTES: "/dev_notes",
     ACCOUNT: "/account",
     GENERATOR: "/generator",
-    GENERATOR_TASK: "/generator/task",
-    EOL: "/eol",
-    EOL_UPDATE: "/eol_update"
+    GENERATOR_TASK: "/generator/task"
 };
